@@ -2,6 +2,16 @@
 import csv 
 import os
 
+
+
+
+def saveResult(filecontent):
+	f = open('runResult.csv', 'w+')
+	f.write(filecontent)
+	f.close()
+
+
+
 # csv file name 
 filename = "list.csv"
 
@@ -54,4 +64,7 @@ print('total success =%3d ; total failed =%3d' %(success,failed))
 
 print result
 
+saveResult(result)
+
 print("end of script")
+
