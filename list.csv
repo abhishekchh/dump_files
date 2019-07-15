@@ -2,3 +2,4 @@ command,run
 dir,y
 echo 'hi',y
 tree,n
+nocommand,y
