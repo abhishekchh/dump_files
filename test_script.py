@@ -8,6 +8,8 @@ filename = "list.csv"
 # initializing the titles and rows list 
 fields = [] 
 rows = [] 
+success =0;
+failed =0;
 
 # reading csv file 
 with open(filename, 'r') as csvfile: 
@@ -29,7 +31,12 @@ for row in rows[:5]:
 	if(row[1]=='y'):
 		#executing commands
 		x=os.system(row[0])
+		if(x==0):
+			success = success + 1
+		else:
+			failed = failed + 1
 		print("status of print is %d", x)
 	print('\n') 
+	print('total success = %d ; total failed = %d',success,failed) 
 
 print("end of script")
