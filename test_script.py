@@ -25,6 +25,10 @@ with open(filename, 'r') as csvfile:
 
 # printing the field names 
 print('Field names are:' + ', '.join(field for field in fields)) 
+headers = ', '.join(field for field in fields)
+headers= headers + ', result\n'
+csvLines = ''
+print headers
 
 print('executing tests') 
 for row in rows[:5]:
@@ -35,8 +39,19 @@ for row in rows[:5]:
 			success = success + 1
 		else:
 			failed = failed + 1
-		print("status of print is %d", x)
-	print('\n') 
-	print('total success = %d ; total failed = %d',success,failed) 
+		print("status of test is %3d" %(x))
+	else:
+		x = ''
+	print('\n')
+	if(x==''):
+		csvLines = csvLines + ', '.join(row) + ', notRun\n'
+	elif(x==0):
+		csvLines = csvLines + ', '.join(row) + ', passed\n'
+	else:
+		csvLines = csvLines + ', '.join(row) + ', failed\n'
+	result = headers +csvLines
+print('total success =%3d ; total failed =%3d' %(success,failed)) 
+
+print result
 
 print("end of script")
