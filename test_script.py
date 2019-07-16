@@ -2,36 +2,47 @@
 import csv 
 import os
 
-
-
+# csv file name 
+filename = "list.csv"
+ 
+fields = [] 
+rows = [] 
+success =0;
+failed =0;
+commandIndex = -1;
+runIndex = -1;
+resultIndex = -1;
+nameIndex = -1;
 
 def saveResult(filecontent):
 	f = open('runResult.csv', 'w+')
 	f.write(filecontent)
 	f.close()
 
+	
+def getColIndex(argument):
+    for i in range(len(argument)):
+		global commandIndex
+		global runIndex
+		global nameIndex
+		if(argument[i]=='command'):
+			commandIndex = i
+		elif(argument[i]=='run'):
+			runIndex = i
+		elif(argument[i]=='testName'):
+			nameIndex = i
 
-
-# csv file name 
-filename = "list.csv"
-
-# initializing the titles and rows list 
-fields = [] 
-rows = [] 
-success =0;
-failed =0;
+def readCsv(filename):
+	global fields
+	global rows
+	with open(filename, 'r') as csvfile: 
+		csvreader = csv.reader(csvfile) 
+		fields = csvreader.next() 
+		for row in csvreader: 
+			rows.append(row) 
 
 # reading csv file 
-with open(filename, 'r') as csvfile: 
-	# creating a csv reader object 
-	csvreader = csv.reader(csvfile) 	
-	# extracting field names through first row 
-	fields = csvreader.next() 
-	# extracting each data row one by one 
-	for row in csvreader: 
-		rows.append(row) 
-	# get total number of rows 
-	print("Total no. of rows: %d"%(csvreader.line_num)) 
+readCsv(filename)
 
 # printing the field names 
 print('Field names are:' + ', '.join(field for field in fields)) 
@@ -40,25 +51,28 @@ headers= headers + ', result\n'
 csvLines = ''
 print headers
 
+#for field in fields:
+getColIndex(fields)
+
 print('executing tests') 
 for row in rows[:5]:
-	if(row[1]=='y'):
+	x = ''
+	if(row[runIndex]=='y'):
 		#executing commands
-		x=os.system(row[0])
+		x=os.system(row[commandIndex])
 		if(x==0):
 			success = success + 1
 		else:
 			failed = failed + 1
-		print("status of test is %3d" %(x))
-	else:
-		x = ''
 	print('\n')
 	if(x==''):
-		csvLines = csvLines + ', '.join(row) + ', notRun\n'
+		testResult = 'NOT_RUN'
 	elif(x==0):
-		csvLines = csvLines + ', '.join(row) + ', passed\n'
+		testResult = 'PASSED'
 	else:
-		csvLines = csvLines + ', '.join(row) + ', failed\n'
+		testResult = 'FAILED'
+	csvLines = csvLines + ', '.join(row) + ', ' + testResult + '\n'
+	print("Test Run status of %s is %s" %(row[nameIndex] , testResult))
 	result = headers +csvLines
 print('total success =%3d ; total failed =%3d' %(success,failed)) 
 
