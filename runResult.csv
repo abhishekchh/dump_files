@@ -1,6 +1,6 @@
 testName, folderName, command, run, result
 dir, , dir, y, PASSED
-ecuke, restassured, mvn clean test -Dtest=CucumberTests, y, FAILED
+ecuke, restassured, mvn -f restassured clean test -Dtest=CucumberTests, y, FAILED
 echo, , echo 'hi', y, PASSED
 tree, , tree, n, NOT_RUN
 nothing, , nocommand, y, FAILED
