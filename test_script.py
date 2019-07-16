@@ -9,6 +9,7 @@ fields = []
 rows = [] 
 success =0;
 failed =0;
+noRun =0;
 commandIndex = -1;
 runIndex = -1;
 resultIndex = -1;
@@ -21,16 +22,19 @@ def saveResult(filecontent):
 
 	
 def getColIndex(argument):
-    for i in range(len(argument)):
-		global commandIndex
-		global runIndex
-		global nameIndex
+	global commandIndex
+	global runIndex
+	global nameIndex
+	global resultIndex
+
+	for i in range(len(argument)):
 		if(argument[i]=='command'):
 			commandIndex = i
 		elif(argument[i]=='run'):
 			runIndex = i
 		elif(argument[i]=='testName'):
 			nameIndex = i
+	resultIndex = len(argument)
 
 def readCsv(filename):
 	global fields
@@ -45,40 +49,36 @@ def readCsv(filename):
 readCsv(filename)
 
 # printing the field names 
-print('Field names are:' + ', '.join(field for field in fields)) 
+#print('Field names are:' + ', '.join(field for field in fields)) 
+
 headers = ', '.join(field for field in fields)
 headers= headers + ', result\n'
 csvLines = ''
-print headers
 
-#for field in fields:
 getColIndex(fields)
 
 print('executing tests') 
 for row in rows[:5]:
 	x = ''
 	if(row[runIndex]=='y'):
-		#executing commands
 		x=os.system(row[commandIndex])
 		if(x==0):
 			success = success + 1
+			testResult = 'PASSED'
 		else:
 			failed = failed + 1
-	print('\n')
-	if(x==''):
+			testResult = 'FAILED'
+	elif(x==''):
+		noRun = noRun + 1
 		testResult = 'NOT_RUN'
-	elif(x==0):
-		testResult = 'PASSED'
-	else:
-		testResult = 'FAILED'
 	csvLines = csvLines + ', '.join(row) + ', ' + testResult + '\n'
-	print("Test Run status of %s is %s" %(row[nameIndex] , testResult))
+	print("\nTest Run status of %s is %s" %(row[nameIndex] , testResult))
 	result = headers +csvLines
-print('total success =%3d ; total failed =%3d' %(success,failed)) 
-
-print result
+print('\n\n============================================')
+print('TEST RUN COMPLETED')
+print('Total success runs\t =%3d \nTotal failed runs\t =%3d \nTests marked as no run\t =%3d' %(success,failed,noRun)) 
+print('============================================')
 
 saveResult(result)
 
 print("end of script")
-
