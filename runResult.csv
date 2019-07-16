@@ -1,0 +1,5 @@
+command, run, result
+dir, y, PASSED
+echo 'hi', y, PASSED
+tree, n, NOT_RUN
+nocommand, y, FAILED
