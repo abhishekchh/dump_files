@@ -11,6 +11,7 @@ success =0;
 failed =0;
 noRun =0;
 commandIndex = -1;
+folderIndex = -1;
 runIndex = -1;
 resultIndex = -1;
 nameIndex = -1;
@@ -26,6 +27,7 @@ def getColIndex(argument):
 	global runIndex
 	global nameIndex
 	global resultIndex
+	global folderIndex
 
 	for i in range(len(argument)):
 		if(argument[i]=='command'):
@@ -34,6 +36,9 @@ def getColIndex(argument):
 			runIndex = i
 		elif(argument[i]=='testName'):
 			nameIndex = i
+		elif(argument[i]=='folderName'):
+			folderIndex = i
+			print ("folderName %2d" %(i))
 	resultIndex = len(argument)
 
 def readCsv(filename):
