@@ -1,5 +1,5 @@
-command, run, result
-dir, y, PASSED
-echo 'hi', y, PASSED
-tree, n, NOT_RUN
-nocommand, y, FAILED
+testName, command, run, result
+dir, dir, y, PASSED
+echo, echo 'hi', y, PASSED
+tree, tree, n, NOT_RUN
+nothing, nocommand, y, FAILED
