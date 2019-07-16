@@ -1,5 +1,5 @@
-command,run
-dir,y
-echo 'hi',y
-tree,n
-nocommand,y
+testName,command,run
+dir,dir,y
+echo,echo 'hi',y
+tree,tree,n
+nothing,nocommand,y
