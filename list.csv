@@ -2,5 +2,6 @@ testName,folderName,command,run
 dir,,dir,y
 ecuke,restassured,mvn -f restassured test -Dtest=CucumberTests,y
 echo,,echo 'hi',y
+SOAP-UI,SoapUI,mvn -f SoapUI mvn com.smartbear.soapui:soapui-maven-plugin:4.6.1:test
 tree,,tree,n
 nothing,,nocommand,y
