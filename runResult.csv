@@ -2,5 +2,5 @@ testName, folderName, command, run, result
 dir, , dir, y, PASSED
 ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, FAILED
 echo, , echo 'hi', y, PASSED
+SOAP-UI, SoapUI, mvn -f SoapUI mvn com.smartbear.soapui:soapui-maven-plugin:4.6.1:test, y, FAILED
 tree, , tree, n, NOT_RUN
-nothing, , nocommand, y, FAILED
