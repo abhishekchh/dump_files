@@ -7,7 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"pretty"},
+		plugin = { "pretty", "html:target/cucumber-report" },
 		glue = {"stepdefs"},
-		features = {"src/test/features"})
+		features = {"src/test/features"}
+		)
 public class CucumberTests {}

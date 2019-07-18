@@ -1,6 +1,6 @@
-testName, folderName, command, run, result
-dir, , dir, y, PASSED
-ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, FAILED
-echo, , echo 'hi', y, PASSED
-SOAP-UI, SoapUI, mvn -f SoapUI clean test, y, FAILED
-tree, , tree, n, NOT_RUN
+testName, folderName, command, run, reportFolder, result
+dir, , dir, y, restassured/target/cucumber-report, PASSED
+ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, , FAILED
+echo, , echo 'hi', y, , PASSED
+SOAP-UI, SoapUI, mvn -f SoapUI clean test, y, , FAILED
+tree, , tree, n, , NOT_RUN

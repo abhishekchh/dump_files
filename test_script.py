@@ -1,10 +1,8 @@
 # importing csv module 
 import csv 
 import os
+from datetime import datetime
 
-# csv file name 
-filename = "list.csv"
- 
 fields = [] 
 rows = [] 
 success =0;
@@ -15,6 +13,15 @@ folderIndex = -1;
 runIndex = -1;
 resultIndex = -1;
 nameIndex = -1;
+reportIndex = -1;
+now = datetime.now()
+current_time = now.strftime("%Y%m%d-%H%M%S")
+reportFolder = 'Reports/' + current_time
+
+# csv file name 
+filename = "list.csv"
+os.system('mkdir "'+reportFolder +'"')
+ 
 
 def saveResult(filecontent):
 	f = open('runResult.csv', 'w+')
@@ -28,6 +35,7 @@ def getColIndex(argument):
 	global nameIndex
 	global resultIndex
 	global folderIndex
+	global reportIndex
 
 	for i in range(len(argument)):
 		if(argument[i]=='command'):
@@ -38,7 +46,6 @@ def getColIndex(argument):
 			nameIndex = i
 		elif(argument[i]=='folderName'):
 			folderIndex = i
-			print ("folderName %2d" %(i))
 	resultIndex = len(argument)
 
 def readCsv(filename):
@@ -73,6 +80,10 @@ for row in rows[:5]:
 		else:
 			failed = failed + 1
 			testResult = 'FAILED'
+		if(row[reportIndex]!=''):
+			os.system('mv '+row[reportIndex]+'* ' +reportFolder +'/'+row[nameIndex] )
+		else:
+			os.system('echo "report file Destination not defined"' +reportFolder +'/'+row[nameIndex] )
 	elif(x==''):
 		noRun = noRun + 1
 		testResult = 'NOT_RUN'
