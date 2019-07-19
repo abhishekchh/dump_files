@@ -3,5 +3,5 @@ dir,,dir,y,
 ecuke,restassured,mvn -f restassured test -Dtest=CucumberTests,y,restassured/target/cucumber-report
 echo,,echo 'hi',y,
 SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,
-tree,,tree,n,
 nothing,,nocommand,y,
+JXLPOI-SoapUI-Test,Wilfred,mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls,y,Wilfred/result

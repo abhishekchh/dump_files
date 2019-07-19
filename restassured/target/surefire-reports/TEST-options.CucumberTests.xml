@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="options.CucumberTests" time="0.16" errors="2" skipped="3">
+<testsuite tests="6" failures="0" name="options.CucumberTests" time="0.198" errors="2" skipped="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
     <property name="java.vm.version" value="25.212-b10"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\git\dump_files"/>
+    <property name="maven.multiModuleProjectDirectory" value="e:\git\dump_files"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.os.patch.level" value=""/>
     <property name="test" value="CucumberTests"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\git\dump_files"/>
+    <property name="user.dir" value="e:\git\dump_files"/>
     <property name="java.runtime.version" value="1.8.0_212-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\endorsed"/>
@@ -66,8 +66,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Given a book exists with an isbn of 9781451648546" time="0.008"/>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="When a user retrieves the book by isbn" time="0.027">
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Given a book exists with an isbn of 9781451648546" time="0.011"/>
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="When a user retrieves the book by isbn" time="0.021">
     <error message="Connection reset" type="java.net.SocketException">java.net.SocketException: Connection reset
 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
@@ -180,21 +180,21 @@
 	at stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn(BookStepDefinitions.java:35)
 	at ✽.When a user retrieves the book by isbn(GetBookByISBN.feature:4)
 </error>
-    <system-err>Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+    <system-err>Jul 18, 2019 4:56:18 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: I/O exception (java.net.SocketException) caught when connecting to {s}-&gt;https://www.googleapis.com:443: Connection reset
-Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+Jul 18, 2019 4:56:19 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: Retrying connect to {s}-&gt;https://www.googleapis.com:443
-Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+Jul 18, 2019 4:56:19 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: I/O exception (java.net.SocketException) caught when connecting to {s}-&gt;https://www.googleapis.com:443: Connection reset
-Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+Jul 18, 2019 4:56:19 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: Retrying connect to {s}-&gt;https://www.googleapis.com:443
-Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+Jul 18, 2019 4:56:20 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: I/O exception (java.net.SocketException) caught when connecting to {s}-&gt;https://www.googleapis.com:443: Connection reset
-Jul 17, 2019 7:31:59 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
+Jul 18, 2019 4:56:20 PM org.apache.http.impl.client.DefaultHttpClient tryConnect
 INFO: Retrying connect to {s}-&gt;https://www.googleapis.com:443
 </system-err>
   </testcase>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Scenario: User calls web service to get a book by its ISBN" time="0.03">
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Scenario: User calls web service to get a book by its ISBN" time="0.034">
     <error message="Connection reset" type="java.net.SocketException">java.net.SocketException: Connection reset
 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
@@ -308,13 +308,13 @@ INFO: Retrying connect to {s}-&gt;https://www.googleapis.com:443
 	at ✽.When a user retrieves the book by isbn(GetBookByISBN.feature:4)
 </error>
   </testcase>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Then the status code is 200" time="0.031">
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="Then the status code is 200" time="0.044">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following" time="0.031">
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following" time="0.044">
     <skipped/>
   </testcase>
-  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following in any order" time="0.033">
+  <testcase classname="Scenario: User calls web service to get a book by its ISBN" name="And response includes the following in any order" time="0.044">
     <skipped/>
   </testcase>
 </testsuite>

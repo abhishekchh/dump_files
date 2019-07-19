@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: options.CucumberTests
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 11.212 sec <<< FAILURE!
-When a user retrieves the book by isbn(Scenario: User calls web service to get a book by its ISBN)  Time elapsed: 0.027 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 12.843 sec <<< FAILURE!
+When a user retrieves the book by isbn(Scenario: User calls web service to get a book by its ISBN)  Time elapsed: 0.021 sec  <<< ERROR!
 java.net.SocketException: Connection reset
 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
@@ -115,7 +115,7 @@ java.net.SocketException: Connection reset
 	at stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn(BookStepDefinitions.java:35)
 	at ?.When a user retrieves the book by isbn(GetBookByISBN.feature:4)
 
-Scenario: User calls web service to get a book by its ISBN  Time elapsed: 0.03 sec  <<< ERROR!
+Scenario: User calls web service to get a book by its ISBN  Time elapsed: 0.034 sec  <<< ERROR!
 java.net.SocketException: Connection reset
 	at java.net.SocketInputStream.read(SocketInputStream.java:210)
 	at java.net.SocketInputStream.read(SocketInputStream.java:141)

@@ -17,7 +17,6 @@ public class BookTests
 	@Test
 	public void testGetByISBN(){
 		String isbn = "isbn:9781451648546";
-
 		given().
 		param("q", isbn).
 		when().
