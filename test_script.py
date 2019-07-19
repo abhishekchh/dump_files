@@ -70,7 +70,7 @@ csvLines = ''
 getColIndex(fields)
 
 print('executing tests') 
-for row in rows[:5]:
+for row in rows:
 	x = ''
 	if(row[runIndex]=='y'):
 		x=os.system(row[commandIndex])
@@ -83,7 +83,7 @@ for row in rows[:5]:
 		if(row[reportIndex]!=''):
 			os.system('mv '+row[reportIndex]+'* ' +reportFolder +'/'+row[nameIndex] )
 		else:
-			os.system('echo "report file Destination not defined"' +reportFolder +'/'+row[nameIndex] )
+			os.system('echo "report file Destination not defined; This is a place holder"> ' +reportFolder +'/'+row[nameIndex] +'-report.txt' )
 	elif(x==''):
 		noRun = noRun + 1
 		testResult = 'NOT_RUN'
