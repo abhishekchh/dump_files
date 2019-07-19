@@ -1,7 +1,0 @@
-testName,folderName,command,run,reportFolder
-dir,,dir,y,
-ecuke,restassured,mvn -f restassured test -Dtest=CucumberTests,y,restassured/target/cucumber-report
-echo,,echo 'hi',y,
-SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,
-tree,,tree,n,
-nothing,,nocommand,y,
