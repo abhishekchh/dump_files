@@ -61,7 +61,7 @@
 					</dependency>
 				</dependencies>
                 <configuration>
-                    <projectFile>Wilfred/calculator-Abhi.xml</projectFile>
+                    <projectFile>Wilfred/reqRes.xml</projectFile>
                     <projectProperties>
                         <value>example=Hello World!</value>
                     </projectProperties>
