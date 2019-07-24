@@ -1,8 +1,8 @@
 testName, folderName, command, run, reportFolder, result
 dir, , dir, y, , PASSED
-ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, restassured/target/cucumber-report, PASSED
+ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, restassured/target/cucumber-report, FAILED
 echo, , echo 'hi', y, , PASSED
 SOAP-UI, SoapUI, mvn -f SoapUI clean test, y, , FAILED
 nothing, , nocommand, y, , FAILED
-JXLPOI-SoapUI-Test, Wilfred, mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls, y, Wilfred/result, PASSED
-Karate, karatetest, mvn -f karatetest test , y, karatetest/surefire-reports, PASSED
+JXLPOI-SoapUI-Test, Wilfred, mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls, y, Wilfred/result, FAILED
+Karate, karatetest, mvn -f karatetest test , y, karatetest/target/surefire-reports, PASSED

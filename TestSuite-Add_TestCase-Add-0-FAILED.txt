@@ -1,17 +1,27 @@
 Status: FAILED
-Time Taken: 18543
-Size: 0
-Timestamp: Fri Jul 19 17:23:07 IST 2019
+Time Taken: 3989
+Size: 921
+Timestamp: Wed Jul 24 13:21:46 IST 2019
 TestStep: Add
 
 ----------------- Messages ------------------------------
-java.net.SocketException: Connection reset
+[SOAP Response] error: </FONT> does not close tag <BR>.
+[SOAP Response] </FONT> does not close tag <BR>.
 
 ----------------- Properties ------------------------------
 Endpoint: http://www.dneonline.com/calculator.asmx
 Encoding: UTF-8
 
 ---------------- Request ---------------------------
+Request Headers: SOAPAction : "http://tempuri.org/Add"
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 291
+Proxy-Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
@@ -23,4 +33,89 @@ Encoding: UTF-8
 </soapenv:Envelope>
 
 ---------------- Response --------------------------
-- missing response / garbage collected -
+Response Headers: Cache-Control : no-cache
+Proxy-Authenticate : NEGOTIATE
+Proxy-Authenticate : NTLM
+Proxy-Authenticate : BASIC realm="SSO_Direct"
+Connection : close
+Set-Cookie : BCSI-CS-7c1d5f45c439b8f0=2; Path=/
+Pragma : no-cache
+#status# : HTTP/1.1 407 Proxy Authentication Required
+Proxy-Connection : close
+Content-Length : 921
+Content-Type : text/html; charset=utf-8
+
+
+<HTML><HEAD>
+
+<TITLE>Access Denied</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<FONT face="Helvetica">
+
+<big><strong></strong></big><BR>
+
+</FONT>
+
+<blockquote>
+
+<TABLE border=0 cellPadding=1 width="80%">
+
+<TR><TD>
+
+<FONT face="Helvetica">
+
+<big>Access Denied (authentication_failed)</big>
+
+<BR>
+
+<BR>
+
+</FONT>
+
+</TD></TR>
+
+<TR><TD>
+
+<FONT face="Helvetica">
+
+Your credentials could not be authenticated: "Credentials are missing.". You will not be permitted access until your credentials can be verified.
+
+</FONT>
+
+</TD></TR>
+
+<TR><TD>
+
+<FONT face="Helvetica">
+
+This is typically caused by an incorrect username and/or password, but could also be caused by network problems.
+
+</FONT>
+
+</TD></TR>
+
+<TR><TD>
+
+<FONT face="Helvetica" SIZE=2>
+
+<BR>
+
+For assistance, contact your network support team.
+
+</FONT>
+
+</TD></TR>
+
+</TABLE>
+
+</blockquote>
+
+</FONT>
+
+</BODY></HTML>
+
+
