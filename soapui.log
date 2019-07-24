@@ -1,21 +1,52 @@
-2019-07-19 11:55:05,232 WARN  [SoapUI] Missing folder [e:\git\dump_files\ext] for external libraries
-2019-07-19 11:55:05,887 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\imgadmin\soapui-settings.xml]
-2019-07-19 11:55:08,656 INFO  [PluginManager] 0 plugins loaded in 5 ms
-2019-07-19 11:55:08,656 INFO  [DefaultSoapUICore] All plugins loaded
-2019-07-19 11:55:11,905 INFO  [WsdlProject] Loaded project from [file:/e:/git/dump_files/Wilfred/calculator-Abhi.xml]
-2019-07-19 11:55:11,935 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
-2019-07-19 11:55:11,951 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [calculator_Test]
-2019-07-19 11:55:11,956 INFO  [SoapUITestCaseRunner] Running Project [calculator_Test], runType = SEQUENTIAL
-2019-07-19 11:55:12,036 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add TestCase]
-2019-07-19 11:55:12,082 INFO  [SoapUITestCaseRunner] running step [Add]
-2019-07-19 11:55:13,757 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-2019-07-19 11:55:13,758 INFO  [SoapUITestCaseRunner] running step [testJXLRead]
-2019-07-19 11:55:16,006 INFO  [log]     Instance    intA    intB    Assertion
-2019-07-19 11:55:16,022 INFO  [log]     TC_1    5    5    10
-2019-07-19 11:55:16,023 INFO  [log]     TC_2    6    6    12
-2019-07-19 11:55:16,027 INFO  [log]     TC_3    7    7    14
-2019-07-19 11:55:16,035 INFO  [log]     TC_4    8    8    17
-2019-07-19 11:55:16,036 INFO  [log]     TC_5    9    9    18
-2019-07-19 11:55:16,361 INFO  [SoapUITestCaseRunner] running step [testPOIwrite]
-2019-07-19 11:55:17,037 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add TestCase], time taken: 4922ms, status: FINISHED
-2019-07-19 11:55:17,038 INFO  [SoapUITestCaseRunner] Project [calculator_Test] finished with status [FINISHED] in 5056ms
+2019-07-19 17:22:53,738 WARN  [SoapUI] Missing folder [E:\git\dump_files\ext] for external libraries
+2019-07-19 17:22:54,522 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\imgadmin\soapui-settings.xml]
+2019-07-19 17:23:01,248 INFO  [PluginManager] 0 plugins loaded in 19 ms
+2019-07-19 17:23:01,248 INFO  [DefaultSoapUICore] All plugins loaded
+2019-07-19 17:23:07,141 INFO  [WsdlProject] Loaded project from [file:/E:/git/dump_files/Wilfred/calculator-Abhi.xml]
+2019-07-19 17:23:07,156 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+2019-07-19 17:23:07,156 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [calculator_Test]
+2019-07-19 17:23:07,156 INFO  [SoapUITestCaseRunner] Running Project [calculator_Test], runType = SEQUENTIAL
+2019-07-19 17:23:07,203 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Add TestCase]
+2019-07-19 17:23:07,235 INFO  [SoapUITestCaseRunner] running step [Add]
+2019-07-19 17:23:25,406 ERROR [WsdlSubmit] Exception in request: java.net.SocketException: Connection reset
+2019-07-19 17:23:25,464 ERROR [SoapUI] An error occurred [Connection reset], see error log for details
+2019-07-19 17:23:25,559 ERROR [errorlog] java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:233)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:323)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:297)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:227)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:119)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:79)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:217)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:364)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-19 17:23:25,814 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2019-07-19 17:23:25,817 ERROR [SoapUITestCaseRunner] Add failed, exporting to [E:\git\dump_files\TestSuite-Add_TestCase-Add-0-FAILED.txt]
+2019-07-19 17:23:25,873 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Add TestCase], time taken: 18543ms, status: FAILED
+2019-07-19 17:23:25,873 INFO  [SoapUITestCaseRunner] Project [calculator_Test] finished with status [FAILED] in 18701ms
