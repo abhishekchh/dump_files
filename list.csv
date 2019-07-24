@@ -5,4 +5,4 @@ echo,,echo 'hi',y,
 SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,
 nothing,,nocommand,y,
 JXLPOI-SoapUI-Test,Wilfred,mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls,y,Wilfred/result
-Karate,karatetest,mvn -f karatetest test ,y,karatetest/surefire-reports
+Karate,karatetest,mvn -f karatetest test ,y,karatetest/target/surefire-reports
