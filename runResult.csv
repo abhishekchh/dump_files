@@ -4,5 +4,5 @@ ecuke, restassured, mvn -f restassured test -Dtest=CucumberTests, y, restassured
 echo, , echo 'hi', y, , PASSED
 SOAP-UI, SoapUI, mvn -f SoapUI clean test, y, , FAILED
 nothing, , nocommand, y, , FAILED
-JXLPOI-SoapUI-Test, Wilfred, mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls, y, Wilfred/result, FAILED
+JXLPOI-SoapUI-Test, Wilfred, mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls, y, Wilfred/result, PASSED
 Karate, karatetest, mvn -f karatetest test , y, karatetest/target/surefire-reports, PASSED
