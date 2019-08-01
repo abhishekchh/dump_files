@@ -1,20 +1,20 @@
-2019-07-24 15:08:21,583 WARN  [SoapUI] Missing folder [C:\Jenkins\workspace\Test\hello\ext] for external libraries
-2019-07-24 15:08:21,583 INFO  [DefaultSoapUICore] Creating new settings at [C:\Windows\system32\config\systemprofile\soapui-settings.xml]
-2019-07-24 15:08:28,627 INFO  [PluginManager] 0 plugins loaded in 6 ms
-2019-07-24 15:08:28,628 INFO  [DefaultSoapUICore] All plugins loaded
-2019-07-24 15:08:32,983 INFO  [WsdlProject] Loaded project from [file:/C:/Jenkins/workspace/Test/hello/Wilfred/reqRes.xml]
-2019-07-24 15:08:33,002 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
-2019-07-24 15:08:33,036 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [reqRes]
-2019-07-24 15:08:33,039 INFO  [SoapUITestCaseRunner] Running Project [reqRes], runType = SEQUENTIAL
-2019-07-24 15:08:33,169 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase1]
-2019-07-24 15:08:33,222 INFO  [SoapUITestCaseRunner] running step [Users]
-2019-07-24 15:08:38,737 INFO  [SoapUITestCaseRunner] running step [testJXLRead]
-2019-07-24 15:08:42,393 INFO  [log]     Instance    intA    intB    Assertion
-2019-07-24 15:08:42,430 INFO  [log]     TC_1    5    5    10
-2019-07-24 15:08:42,430 INFO  [log]     TC_2    6    6    12
-2019-07-24 15:08:42,431 INFO  [log]     TC_3    7    7    14
-2019-07-24 15:08:42,437 INFO  [log]     TC_4    8    8    17
-2019-07-24 15:08:42,438 INFO  [log]     TC_5    9    9    18
-2019-07-24 15:08:42,767 INFO  [SoapUITestCaseRunner] running step [testPOIWrite]
-2019-07-24 15:08:43,848 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase1], time taken: 9646ms, status: FINISHED
-2019-07-24 15:08:43,848 INFO  [SoapUITestCaseRunner] Project [reqRes] finished with status [FINISHED] in 10790ms
+2019-08-01 10:37:18,527 WARN  [SoapUI] Missing folder [C:\tools\Jenkins\workspace\Automation\TestRunner\ext] for external libraries
+2019-08-01 10:37:19,204 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\tools\Jenkins\workspace\Automation\TestRunner\Wilfred\soapui-settings.xml]
+2019-08-01 10:37:20,705 INFO  [PluginManager] 0 plugins loaded in 8 ms
+2019-08-01 10:37:20,706 INFO  [DefaultSoapUICore] All plugins loaded
+2019-08-01 10:37:24,621 INFO  [WsdlProject] Loaded project from [file:/C:/tools/Jenkins/workspace/Automation/TestRunner/Wilfred/reqRes.xml]
+2019-08-01 10:37:24,640 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+2019-08-01 10:37:24,650 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [reqRes]
+2019-08-01 10:37:24,658 INFO  [SoapUITestCaseRunner] Running Project [reqRes], runType = SEQUENTIAL
+2019-08-01 10:37:24,705 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase1]
+2019-08-01 10:37:24,734 INFO  [SoapUITestCaseRunner] running step [Users]
+2019-08-01 10:37:25,968 INFO  [SoapUITestCaseRunner] running step [testJXLRead]
+2019-08-01 10:37:30,664 INFO  [log]     Instance    intA    intB    Assertion
+2019-08-01 10:37:30,710 INFO  [log]     TC_1    5    5    10
+2019-08-01 10:37:30,718 INFO  [log]     TC_2    6    6    12
+2019-08-01 10:37:30,718 INFO  [log]     TC_3    7    7    14
+2019-08-01 10:37:30,755 INFO  [log]     TC_4    8    8    17
+2019-08-01 10:37:30,755 INFO  [log]     TC_5    9    9    18
+2019-08-01 10:37:31,296 INFO  [SoapUITestCaseRunner] running step [testPOIWrite]
+2019-08-01 10:37:32,869 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase1], time taken: 7360ms, status: FINISHED
+2019-08-01 10:37:32,878 INFO  [SoapUITestCaseRunner] Project [reqRes] finished with status [FINISHED] in 8201ms
