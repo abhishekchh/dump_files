@@ -26,11 +26,10 @@
 	<con:setting id="WsaSettings@overrideExistingHeaders">true</con:setting>
 	<con:setting id="WsaSettings@enableForOptional">true</con:setting>
 	<con:setting id="VersionUpdateSettings@auto-check-version-update">true</con:setting>
-	<con:setting id="WSISettings@location">C:\Program Files (x86)\SmartBear\SoapUI-5.5.0/wsi-test-tools</con:setting>
 	<con:setting id="UISettings@show_stay_tuned">false</con:setting>
 	<con:setting id="RecentProjects">&lt;xml-fragment/></con:setting>
 	<!--<con:setting id="ProxySettings@autoProxy">false</con:setting>
-	<con:setting id="ProxySettings@host">proxy4.wipro.com</con:setting>
+	<con:setting id="ProxySettings@host">proxy.example.com</con:setting>
 	<con:setting id="ProxySettings@port">8080</con:setting>
 	<con:setting id="ProxySettings@enableProxy">true</con:setting> -->
 <con:setting id="GlobalPropertySettings@properties">&lt;xml-fragment/></con:setting>undefined</con:soapui-settings>
