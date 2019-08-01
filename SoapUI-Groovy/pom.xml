@@ -72,11 +72,15 @@
 
 				</dependencies>
                 <configuration>
-                    <projectFile>Wilfred/reqRes.xml</projectFile>
+                    <projectFile>SoapUI-Groovy/reqRes.xml</projectFile>
                     <projectProperties>
                         <value>example=Hello World!</value>
                     </projectProperties>
-					<settingsFile>Wilfred/soapui-settings.xml</settingsFile>
+					<jvmArguments>
+						-DresultFile=./SoapUI-Groovy/result/result.xls 
+						-DinputWorkBook=./SoapUI-Groovy/book.xls
+					</jvmArguments>
+					<settingsFile>SoapUI-Groovy/soapui-settings.xml</settingsFile>
                 </configuration>
                 <executions>
                     <execution>

@@ -4,5 +4,5 @@ ecuke,restassured,mvn -f restassured test -Dtest=CucumberTests,y,restassured/tar
 echo,,echo 'hi',y,
 SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,
 nothing,,nocommand,y,
-JXLPOI-SoapUI-Test,Wilfred,mvn -f Wilfred test -DresultFile=./Wilfred/result/result.xls -DinputWorkBook=./Wilfred/book.xls,y,Wilfred/result
+JXLPOI-SoapUI-Test,SoapUI-Groovy,mvn -f SoapUI-Groovy test,y,Wilfred/result
 Karate,karatetest,mvn -f karatetest test ,y,karatetest/target/surefire-reports
