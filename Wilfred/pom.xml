@@ -9,7 +9,8 @@
     <pluginRepositories>
         <pluginRepository>
             <id>SmartBearPluginRepository</id>
-            <url>http://smartbearsoftware.com/repository/maven2</url>
+            <!--<url>http://smartbearsoftware.com/repository/maven2</url>-->
+			<url>http://downloads.smartbear.com/repository/maven2</url>
         </pluginRepository>
     </pluginRepositories>
     <build>
@@ -60,6 +61,13 @@
 						<version>2.4.2</version>
 					</dependency>
 					
+					<!-- https://mvnrepository.com/artifact/org.mortbay.jetty/jetty -->
+<dependency>
+    <groupId>org.mortbay.jetty</groupId>
+    <artifactId>jetty</artifactId>
+    <version>6.1.26</version>
+</dependency>
+
 					
 
 				</dependencies>
@@ -68,6 +76,7 @@
                     <projectProperties>
                         <value>example=Hello World!</value>
                     </projectProperties>
+					<settingsFile>Wilfred/soapui-settings.xml</settingsFile>
                 </configuration>
                 <executions>
                     <execution>

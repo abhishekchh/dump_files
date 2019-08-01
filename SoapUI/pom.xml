@@ -7,9 +7,10 @@
     <name>SoapUI Maven example</name>
     <url>http://maven.apache.org</url>
     <pluginRepositories>
-        <pluginRepository>
+         <pluginRepository>
             <id>SmartBearPluginRepository</id>
-            <url>http://smartbearsoftware.com/repository/maven2</url>
+            <!--<url>http://smartbearsoftware.com/repository/maven2</url>-->
+			<url>http://downloads.smartbear.com/repository/maven2</url>
         </pluginRepository>
     </pluginRepositories>
     <build>
