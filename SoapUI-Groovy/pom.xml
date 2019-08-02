@@ -76,10 +76,6 @@
                     <projectProperties>
                         <value>example=Hello World!</value>
                     </projectProperties>
-					<jvmArguments>
-						-DresultFile=./SoapUI-Groovy/result/result.xls 
-						-DinputWorkBook=./SoapUI-Groovy/book.xls
-					</jvmArguments>
 					<settingsFile>SoapUI-Groovy/soapui-settings.xml</settingsFile>
                 </configuration>
                 <executions>
