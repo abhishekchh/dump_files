@@ -1,0 +1,2 @@
+com.parasoft.xtest.logging.custom.properties=com.parasoft.xtest.logging.scontrol.verbose.enabled\=false
+eclipse.preferences.version=1

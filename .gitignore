@@ -1,7 +1,4 @@
 **/target
-**/.settings
-**/.classpath
-**/.project
 
 global-groovy.log
 soapui-errors.log
@@ -9,6 +6,3 @@ soapui.log
 TestSuite-Add_TestCase-Add-0-FAILED.txt
 
 */target
-*/.settings
-*/.classpath
-*/.project
