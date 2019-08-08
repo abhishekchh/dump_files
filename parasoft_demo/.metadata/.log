@@ -1,0 +1,50 @@
+!SESSION 2019-08-07 12:27:27.705 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  Files\Parasoft\Test\9.10 for SOAtest & Virtualize\eclipse.exe -product com.parasoft.xtest.soavirt.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 Files\Parasoft\Test\9.10 for SOAtest & Virtualize\eclipse.exe -product com.parasoft.xtest.soavirt.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2019-08-07 12:27:56.986
+!MESSAGE An error occurred while installing the items
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2019-08-07 12:27:56.986
+!MESSAGE session context was:(profile=SDKProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Install, operand=null --> [R]com.python.pydev 4.5.5.201603221110, action=org.eclipse.equinox.internal.p2.touchpoint.eclipse.actions.InstallBundleAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.touchpoint.eclipse 4 0 2019-08-07 12:27:56.986
+!MESSAGE The artifact file for osgi.bundle,com.python.pydev,4.5.5.201603221110 was not found.
+
+!ENTRY org.eclipse.equinox.app 0 0 2019-08-07 12:27:59.190
+!MESSAGE Product com.parasoft.xtest.soavirt.product could not be found.
+!SESSION 2019-08-07 23:44:26.672 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config Example -resource Demo/Success.tst
+Command-line arguments:  -noupdate -data C:\Users\svadmin\parasoft\soavirt_workspace -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config Example -resource Demo/Success.tst
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-07 23:44:38.690
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-07 23:44:42.850
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-08-07 23:46:53.803 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  Files\Parasoft\Test\9.10 for SOAtest & Virtualize\eclipse.exe -product com.parasoft.xtest.soavirt.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 Files\Parasoft\Test\9.10 for SOAtest & Virtualize\eclipse.exe -product com.parasoft.xtest.soavirt.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-07 23:50:39.625
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-08-07 23:50:47.625 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst
+Command-line arguments:  -noupdate -data C:\Users\svadmin\parasoft\soavirt_workspace -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-07 23:50:50.062
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
