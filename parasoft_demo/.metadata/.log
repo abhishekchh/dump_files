@@ -366,3 +366,23 @@ org.eclipse.core.internal.resources.ResourceException(/VirtualAssets)[568]: java
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+!SESSION 2019-08-08 23:48:37.960 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -import parasoft_demo
+Command-line arguments:  -noupdate -data parasoft_demo -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -import parasoft_demo
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-08 23:48:51.101
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-08-08 23:48:52.898 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html
+Command-line arguments:  -noupdate -data parasoft_demo -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-08 23:48:54.851
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
