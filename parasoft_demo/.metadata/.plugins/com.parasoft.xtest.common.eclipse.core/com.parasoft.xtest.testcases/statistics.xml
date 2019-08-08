@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TestsRun>
-   <Project err="0" fail="1" name="Demo" skip="0" success="1" total="2">
+   <Project err="0" fail="1" name="Demo" skip="0" success="0" total="1">
       <TestCase fail="true" id="wk:///Demo/Fail.tst#0000000000#0000000002"/>
-      <TestCase id="wk:///Demo/Success.tst#0000000000#0000000002" success="true"/>
    </Project>
    <Project err="0" fail="0" name="ProvisioningAssets" skip="0" success="0" total="0"/>
    <Project err="0" fail="0" name="TestAssets" skip="0" success="0" total="0"/>
