@@ -49,6 +49,8 @@ def getColIndex(argument):
 			folderIndex = i
 		elif(argument[i]=='envSetup'):
 			envSetupIndex = i
+		elif(argument[i]=='reportFolder'):
+			reportIndex = i
 	resultIndex = len(argument)
 
 def readCsv(filename):
