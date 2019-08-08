@@ -1,0 +1,1492 @@
+<html xmlns:graph="graph" xmlns:results="results">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <style type="text/css">
+    BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    A:link {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:active {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: none;}
+    A:visited {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #999999;text-decoration: none;}
+    A:hover {font-family: Arial, Helvetica, sans-serif;font-style: normal;color: #990000;text-decoration: underline;}
+    A.gray_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: underline;}
+    A.red_link:link {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:active {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:visited {font-family: Arial;font-size: 12px;color: #990000;text-decoration: none;}
+    A.red_link:hover {font-family: Arial;font-size: 12px;color: #990000;text-decoration: underline;}
+    A.green_link:link {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:active {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:visited {font-family: Arial;font-size: 12px;color: #008040;text-decoration: none;}
+    A.green_link:hover {font-family: Arial;font-size: 12px;color: #008040;text-decoration: underline;}
+    A.black_link:link {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:active {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:visited {font-family: Arial;font-size: 12px;color: #000000;text-decoration: none;}
+    A.black_link:hover {font-family: Arial;font-size: 12px;color: #000000;text-decoration: underline;}
+    
+    A.blue_link:link {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:active {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:visited {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: none;}
+    A.blue_link:hover {font-family: Arial;font-size: 12px;color: #427fb6;text-decoration: underline;}
+    
+    A.gray_red_link:link {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:active {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:visited {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    A.gray_red_link:hover {font-family: Arial;font-size: 12px;color: #666666;text-decoration: none;}
+    DIV.suite_details{margin-left: 40px; padding: 10px; border: 2px solid #99aaaa;}
+    DIV.test_comment{color:#666666;}
+    DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }
+    DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }    
+    FONT.gray {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #999999;}    
+    FONT.gray2, FONT.gray_red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #666666;}
+    FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}
+    FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000;}
+    FONT.black {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}
+    FONT.red {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000;}
+    FONT.red2 {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #990000; text-decoration: underline;}
+    FONT.blue {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #427fb6;}
+    FONT.green {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #008040;}
+    FONT.orange {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #F69500;}
+    FONT.goldenrod {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #DAA520;}    
+    FONT.small {font-size: 3px;font-family: Arial, Helvetica, sans-serif;color: #cccccc;}
+    IMG.screenshot{float:left; margin-right: 20px; border:1px solid black;}
+    SELECT.cs_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SELECT.ju_authors {font-family: Arial, Helvetica, sans-serif;font-size: 12px;}  
+    SPAN.toggle_button{width: 16px; padding-right: 2px; display: inline-block;} 
+    TD.associations{vertical-align: top;}
+    TD.collapse_controls{text-align:right;}
+    TD.cs_authors{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;border: 1px; bordercolor: #d9c8ac;}
+    TD.error{background-color:#ffeeee}
+    TD.errorsingleborder{background-color:#ffeeee;border:1px solid #CBCBCB}
+    TD.singleborder{ border:1px solid #CBCBCB}
+    TABLE.header{background-color:#FFFFFF}
+    TABLE.singleborder{ border:1px solid #CBCBCB}
+    TABLE.doubleborder{ border:2px solid #CBCBCB}     
+    TABLE.singleborder_blue{ border:2px solid #427fb6}
+    TD.fixed_width{width: 150px;}
+    TD.no_error{}
+    TD.suite_details{padding:2px; }
+    UL.metrics {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:12px;}
+    UL.root {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:3px;}
+    UL {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left:0px; margin-left:12px;}
+    LI {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000; list-style-type: none; margin: 0; padding-left: 0px;}
+    #foldheader{cursor:pointer;cursor:hand ;}
+    #cs_foldheader{cursor:pointer;cursor:hand ;}
+    #cr_foldheader{cursor:pointer;cursor:hand ;}
+    #metrics_foldheader{cursor:pointer;cursor:hand ;}
+    #exec_foldheader{cursor:pointer;cursor:hand ;}
+    #paramsHeader {word-break:break-all;overflow: auto; padding: 3px;}
+    </style><title>SOAtest&nbsp;Report&nbsp;[2019-08-09T00:20:24+05:30]
+
+</title><script language="JavaScript">
+    var nwin;    
+    function openWin (loc_to_open) {    
+       if (!nwin || nwin.closed) {
+          nwin = window.open(loc_to_open,'');
+       } else {
+          nwin.location = loc_to_open;
+       }
+       nwin.focus();
+    }
+    function openDevReport (dev_rep_name) {
+       openWin('&id=' + dev_rep_name);
+    }
+    </script><script language="JavaScript">
+    function sortBySeverity(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }   
+    if(sev != null) sev.style.display='block';
+    if(sev_title != null) sev_title.style.display='block';
+    if(sev_link != null) {
+    sev_link.style.color="#666666";  
+    sev_link.style.textDecoration="none";
+    }
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }   
+    if(cat != null) cat.style.display='none';
+    if(cat_title != null) cat_title.style.display='none';
+    if(cat_link != null) {
+    cat_link.style.color="#990000";
+    cat_link.style.textDecoration="underline";
+    }
+    }
+    
+    function sortByCategory(urgent){
+    if(urgent != null)  {
+        sev=document.getElementById("cs_sevtrue");
+        sev_link=document.getElementById("cs_link_sevtrue");
+        sev_title=document.getElementById("cs_title_sevtrue");
+    } else {
+        sev=document.getElementById("cs_sev");
+        sev_link=document.getElementById("cs_link_sev");
+        sev_title=document.getElementById("cs_title_sev");
+    }
+    if(sev != null) sev.style.display='none';
+    if(sev_title != null) sev_title.style.display='none';
+    if(sev_link != null) { 
+    sev_link.style.color="#990000";   
+    sev_link.style.textDecoration="underline";
+    }       
+    if(urgent != null)  {
+        cat=document.getElementById("cs_cattrue");
+        cat_link=document.getElementById("cs_link_cattrue");
+        cat_title=document.getElementById("cs_title_cattrue");
+    } else {
+        cat=document.getElementById("cs_cat");
+        cat_link=document.getElementById("cs_link_cat");
+        cat_title=document.getElementById("cs_title_cat");
+    }
+    if(cat != null) cat.style.display='block';
+    if(cat_title != null) cat_title.style.display='block';
+    if(cat_link != null) { 
+    cat_link.style.color="#666666"; 
+    cat_link.style.textDecoration="none";
+    }
+    }
+    </script><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_DETAILED_ERROR_MESSAGE" value="DETAILED ERROR MESSAGE"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_TRAFFIC_VIEWER" value="Traffic Viewer"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_SCREENSHOT_VIEWER" value="Screenshot Viewer"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_TRAFFIC_LOG" value="TRAFFIC LOG"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_EXECUTION_TIME" value="Server response time"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_REQUEST" value="Request"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_RESPONSE" value="Response"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_PARASOFT" value="Parasoft Corp. -"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_REPORTIMNG_SYSTEM" value="Reporting System"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_SCREENSHOTS" value="SCREENSHOTS"><input xmlns:textutil="textutil" xmlns:authors="authors" type="hidden" id="RES_PARAMETER_DETAILED_ERROR_MESSAGE_LOWERCASE" value="Detailed Error Message"><script language="JavaScript">
+        function generateHeader() {
+            var header="<table xmlns:textutil='textutil' xmlns:authors='authors' width='100%' cellpadding='0' cellspacing='0'><tr><td bgcolor='#3965A6' "+
+       "background='rep_header_expander.jpg'"    
+       +" width='30%' align='left'>"+
+       "<img src='rep_header_logo.png' alt='rep_header_logo.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='40%' align='center'>"+
+       "<img src='rep_header_4.png' alt='rep_header_4.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='30%' align='center'></td></tr></table>";        	
+            return header;
+        }
+        function getResValue(resKey) {
+            return document.getElementById(resKey).value;
+        }
+    
+    function showDetails(time, id) {
+        var doc = window.open("","_blank","");
+        var details = document.getElementById(id).value;
+        doc.document.write(
+            "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"+
+            "<html xmlns='http://www.w3.org/1999/xhtml'>"+
+            "<head>"+
+            "<title>"+
+            getResValue('RES_PARAMETER_DETAILED_ERROR_MESSAGE_LOWERCASE')+
+            "</title>"+
+            "<style type='text/css'>"+
+        "<!--"+
+        "BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}"+
+        "DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+        "DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+        "FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000; padding-left:10px;}"+
+        "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"+
+        "TD.singleborder{ border:1px solid #CBCBCB}"+
+        "TABLE.header{background-color:#FFFFFF}"+
+        "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"+
+        "TABLE.singleborder{ border:1px solid #CBCBCB}"+
+        "TABLE.doubleborder{ border:2px solid #CBCBCB}"+
+            "body {background-color: #E7F0F5;}"+
+            "#detailedMessage {width:100%; height: 500px; resize: none; border-style: none; border-color: Transparent; outline: none; padding:0px; overflow:auto;}"+
+            ".messageHeader {width:100%; background-color:#ccdddd; border: solid 1px #99aaaa; text-align:center;}"+
+            "-->"+
+            "</style></head>"+
+        "<body>"+
+            generateHeader() +
+            "<table width='100%' cellspacing='0'>"+
+            "<tr>"+
+            "<td style='padding:5px' align='center'>"+
+            "<font class='time'>"+time+"</font>"+
+            "</td>"+
+            "</tr>"+
+            "<tr>"+
+            "<td align='center'>"+
+            "<table align='center' width='95%' class='singleborder_blue' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF'>"+
+            "<tr><td align='center' valign='top'>"+
+            "<table border='0' cellpadding='0' cellspacing='0' bordercolor='#99aaaa'>"+
+
+	    "<tr>"+
+	    "<td><div class='header' align='center'>"+
+	    getResValue('RES_PARAMETER_DETAILED_ERROR_MESSAGE')+
+	    "</div></td>"+
+            "</tr>"+
+            "</table>"+
+	    "<br />"+
+	    "<table class='doubleborder' width='100%' cellspacing='0' cellpadding='0'>"+
+            "<tr>"+            
+			"<td align='left'><textarea name='detailedMessage' id='detailedMessage'>"+details+"</textarea></td>"+
+            "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+
+	    "</table>"+
+        "<br />"+
+            "<table align='center' width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>"+
+	    "<tr>"+
+            "<td align='center'><font class='white'>&#xA9;"+
+            getResValue('RES_PARAMETER_PARASOFT')+
+            "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"+
+            getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')+
+            "&#xA0;</font></td>"+
+            "</tr>"+
+            "</table>"+
+            "</body>"+
+            "</html>");
+            doc.document.close();
+    }
+    
+    
+    function validateTimesToSubstract(requestTrafficTime, responseTrafficTime) {
+        return ((requestTrafficTime > 0) &&  (responseTrafficTime > 0) && (responseTrafficTime > requestTrafficTime));
+    }
+    
+    function isServerExecutionTime(serverResponseTime) {
+        return serverResponseTime != null;
+    }
+    
+    function getValueOrMsgIfLessThan1ms(serverResponseTime) {
+        if (serverResponseTime < 1) {
+            return "< 1";
+        } else {
+            return serverResponseTime;
+        }
+    }
+    
+    function getExecutionTimeBy(testId) {
+        var serverResponseTime = document.getElementById("serverResponseTimeIterationId1_" + testId).value;
+        if (isServerExecutionTime(serverResponseTime)) {
+            return getValueOrMsgIfLessThan1ms(serverResponseTime);
+        }
+    
+        var executionServerTime = -1;
+        var requestTrafficTime = document.getElementById("requestTrafficTimeIterationId1_" + testId).value;
+        var responseTrafficTime = document.getElementById("responseTrafficTimeIterationId1_" + testId).value;
+        if (validateTimesToSubstract(requestTrafficTime, responseTrafficTime)) {
+            executionServerTime = responseTrafficTime - requestTrafficTime;
+        } else {
+            executionServerTime = document.getElementById("executionTimeIterationId1_" + testId).value;
+        }
+        return getValueOrMsgIfLessThan1ms(executionServerTime);
+    }
+    
+    function showTrafficLogWithIterations(testId, iterationCount, time) {
+        var doc = window.open("","_blank",""); 
+        var optionsArray = new Array();
+        var request = document.getElementById("requestIterationId1_" + testId).value;
+        var response = document.getElementById("responseIterationId1_" + testId).value;
+        
+        var execTime = getExecutionTimeBy(testId);
+        
+        for (var i = 0; i < iterationCount; i++) {
+            var option = (i+1);
+            optionsArray.push(option);
+        }
+        doc.document.write(
+            "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"+
+            "<html xmlns='http://www.w3.org/1999/xhtml'>"+
+            "<head>"+
+            "<title>"+ 
+            getResValue('RES_PARAMETER_TRAFFIC_VIEWER')+
+            "</title>"+
+            "<style type='text/css'>"+
+	    "<!--"+
+	    "BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}"+
+	    "DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000; padding-left:10px;}"+
+	    "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"+
+	    ".textArea {width:100%; height: 235px;  resize: none; border-style: none; border-color: Transparent; outline: none; padding:0px; overflow:auto;}"+
+	    "TD.singleborder{ border:1px solid #CBCBCB}"+
+	    "TD.doubleborder{ border:2px solid #CBCBCB}"+
+	    "TABLE.header{background-color:#FFFFFF}"+
+	    "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"+
+	    "TABLE.singleborder{ border:1px solid #CBCBCB}"+
+	    "TABLE.doubleborder{ border:2px solid #CBCBCB}"+
+            "body {background-color: #E7F0F5;}"+
+            ".messageHeader {width:100%; background-color:#ccdddd; border: solid 1px #99aaaa; text-align:center;}"+
+            "#executionTime {width:95%; text-align:left; padding:10px;}"+
+            "-->"+
+            "</style>" + 
+            "<script type='text/javascript' language='javascript'>" +
+            "function setTrafficText(iterationId, execTimeStr) {" +
+            "var testId = document.getElementById('testId').value;" +
+            "var eTime = 'serverResponseTimeIterationId';" +
+            "if(eTime === '') eTime = 'executionTimeIterationId';" +
+            "var req = 'requestIterationId';" +
+            "var resp = 'responseIterationId';" +
+            "eTime = eTime.concat(iterationId + '_' + testId);" + 
+            "req = req.concat(iterationId + '_' + testId);" + 
+            "resp = resp.concat(iterationId + '_' + testId);" + 
+            "var execTime = document.getElementById(eTime).value;" +
+            "var execTimeString = execTimeStr + ': <strong>' + getValueOrMsgIfLessThan1ms(execTime) + ' ms</strong>';" +
+            "document.getElementById('executionTime').innerHTML = execTimeString;" +
+            "var request = document.getElementById(req).value;" +
+            "document.getElementById('requestMessage').value = request;" +
+            "var response = document.getElementById(resp).value;" +
+            "document.getElementById('responseMessage').value = response" +
+            "}" +
+            "function getValueOrMsgIfLessThan1ms(serverResponseTime) {" +
+            "if (serverResponseTime < 1) {" +
+            "return '< 1';" +
+            "} else { return serverResponseTime; }" +
+            "}" +
+            "<\/script>"+
+            "</head>"+
+            "<body>"+
+	    generateHeader() +
+            "<table width='100%' cellspacing='0'>"+
+            "<tr>"+
+            "<td style='padding:5px' align='center'>"+
+            "<font class='time'>"+time+"</font>"+
+            "</td>"+
+            "</tr>"+
+            "<tr>"+
+            "<td align='center'>"+
+            "<table align='center' width='95%' class='singleborder_blue' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF'>"+
+            "<tr><td align='center' valign='top'>"+
+            "<table border='0' cellpadding='0' cellspacing='0' bordercolor='#99aaaa'>"+
+	    "<tr>"+
+	    "<td><div class='header' align='center'>"+
+	    getResValue('RES_PARAMETER_TRAFFIC_LOG')+
+	    "</div></td>"+
+            "</tr>"+
+	    "</table>"+
+	    "<table width='95%' cellspacing='0' cellpadding='0'>");
+            if (iterationCount > 1) {
+                doc.document.write("<tr>"+
+                "<td align='left' >"+
+                "<select align='left' name='IterationCombo' size='1' onChange='javascript:setTrafficText(this.options[this.selectedIndex].value, &#39;"+
+                getResValue('RES_PARAMETER_EXECUTION_TIME')+
+                "&#39;);'>");
+                for (var i = 0; i < iterationCount; i++) {
+                    var iterationOption = optionsArray[i];
+                    doc.document.write("<option value='"+iterationOption+"'>Row #"+(i+1)+"</option>");
+                }
+                doc.document.write("</select>"+
+                "</td>"+
+                "</tr>");
+            }
+	    doc.document.write("<tr>"+
+	    "<td align='center'>"+
+	    "<div class='small_header'>"+
+	    getResValue('RES_PARAMETER_REQUEST')+
+	    "</div></td>"+
+            "</tr>"+
+	    "<tr>"+
+            "<td class='doubleborder' align='center'><textarea class='textArea' name='requestMessage' id='requestMessage' rows='16' readOnly>"+request+"</textarea></td>"+
+            "</tr>"+
+            "</table>"+
+            "<br />"+
+            "<table width='95%' cellspacing='0' cellpadding='0'>"+
+	    "<tr>"+
+	    "<td align='center'>"+
+            "<div class='small_header'>"+
+            getResValue('RES_PARAMETER_RESPONSE')+
+            "</div></td>"+
+	    "</tr>"+
+	    "<tr>"+
+	    "<td align='left'>"+
+            "<div id='executionTime'>"+
+            getResValue('RES_PARAMETER_EXECUTION_TIME')+
+        ": <strong>"+execTime+" ms</strong></div>"+
+	    "</td>"+
+	    "</tr>"+
+            "<tr>"+	    
+	    "<td class='doubleborder' align='center'><textarea class='textArea' name='responseMessage' id='responseMessage' rows='16' readOnly>"+response+"</textarea></td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+	    
+            "</table>"+
+            "<br />"+
+            "<table align='center' width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>"+
+            "<tr>"+
+            "<td align='center'><font class='white'>&#xA9;"+
+            getResValue('RES_PARAMETER_PARASOFT')+
+            "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"+
+            getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')+
+            "&#xA0;</font></td>"+
+            "</tr>"+
+            "</table>");
+            
+            doc.document.write("<input type='hidden' id='");
+            doc.document.write("testId");
+            doc.document.write("' value='" + testId + "'/>");
+            for (var i = 0; i < iterationCount; i++) {
+                doc.document.write("<input type='hidden' id='");
+                var reqid = "executionTimeIterationId" + (i+1) + "_" + testId;
+                doc.document.write(reqid);
+                doc.document.write("' value='" + document.getElementById(reqid).value + "'/>");
+                
+                doc.document.write("<input type='hidden' id='");
+                var reqid = "requestIterationId" + (i+1) + "_" + testId;
+                doc.document.write(reqid);
+                var regExp = RegExp("'", "g") 
+                var reqString = document.getElementById(reqid).value.replace(regExp, "&#39;");
+                doc.document.write("' value='" + reqString + "'/>");
+                
+                doc.document.write("<input type='hidden' id='");
+                var respid = "responseIterationId" + (i+1) + "_" + testId;
+                doc.document.write(respid);
+                var respString = document.getElementById(respid).value.replace(regExp, "&#39;");
+                doc.document.write("' value='" +  respString + "'/>");
+                
+                doc.document.write("<input type='hidden' id='");
+                var respid = "serverResponseTimeIterationId" + (i+1) + "_" + testId;
+                doc.document.write(respid);
+                doc.document.write("' value='" + document.getElementById(respid).value + "'/>");
+            }
+            doc.document.write("</body>"+
+            "</html>");
+            doc.document.close();
+    }
+    
+    
+    function isServerExecutionTime(serverResponseTime) {
+        return serverResponseTime != null;
+    }
+    
+    function getValueOrMsgIfLessThan1ms(serverResponseTime) {
+        if (serverResponseTime < 1) {
+            return "< 1";
+        } else {
+            return serverResponseTime;
+        }
+    }
+    
+    function getExecutionTime(serverResponseTime, responseTime, requestTime) {
+        if (isServerExecutionTime(serverResponseTime)) {
+            return getValueOrMsgIfLessThan1ms(serverResponseTime);
+        }
+        var execTime = -1;
+        try {
+            execTime = responseTime - requestTime; 
+        } catch (e) {
+        }
+        return getValueOrMsgIfLessThan1ms(execTime);
+    }
+    
+    function showTrafficLog(reqHeaderId, reqBodyId, respHeaderId, respBodyId, time, requestTime, responseTime, serverResponseTime) {
+        var doc = window.open("","_blank","");
+        var requestHeader = document.getElementById(reqHeaderId).value;
+        var requestBody = document.getElementById(reqBodyId).value;
+        var responseHeader = document.getElementById(respHeaderId).value;
+        var responseBody = document.getElementById(respBodyId).value;
+        var execTime = getExecutionTime(serverResponseTime, responseTime, requestTime);
+        var request = "";
+        var response = "";
+        if (requestHeader != null && requestHeader.length > 0) {
+            request = requestHeader + "\r\n\r\n";
+        }
+        if (responseHeader != null && responseHeader.length > 0) {
+            response = responseHeader + "\r\n\r\n";
+        }
+        request += requestBody;
+        response += responseBody;
+        doc.document.write(
+            "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"+
+            "<html xmlns='http://www.w3.org/1999/xhtml'>"+
+            "<head>"+
+            "<title>"+
+            getResValue('RES_PARAMETER_TRAFFIC_VIEWER')+
+            "</title>"+
+            "<style type='text/css'>"+
+	    "<!--"+
+	    "BODY,P,OL,TD,pre{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style: normal;color: #000000;}"+
+    	    "DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "DIV.small_header{font-size: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"+
+	    "FONT.time {font-size: 11px;font-family: Arial, Helvetica, sans-serif;color: #000000; padding-left:10px;}"+
+	    "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"+
+	    "TD.singleborder{ border:1px solid #CBCBCB}"+
+	    ".textArea {width:100%; height: 235px;  resize: none; border-style: none; border-color: Transparent; outline: none; padding:0px; overflow:auto;}"+
+	    "TD.doubleborder{ border:2px solid #CBCBCB}"+
+	    "TABLE.header{background-color:#FFFFFF}"+
+	    "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"+
+	    "TABLE.singleborder{ border:1px solid #CBCBCB}"+
+	    "TABLE.doubleborder{ border:2px solid #CBCBCB}"+
+            "body {background-color: #E7F0F5;}"+
+            "#detailedMessage {width:100%; height: 235px; border: solid 1px #99aaaa; padding:0px;}"+
+            ".messageHeader {width:100%; background-color:#ccdddd; border: solid 1px #99aaaa; text-align:center;}"+
+            "#executionTime {width:95%; text-align:left; padding:10px;}"+
+            "-->"+
+            "</style></head>"+
+	    "<body>"+
+
+            generateHeader() +
+            "<table width='100%' cellspacing='0'>"+
+            "<tr>"+
+            "<td style='padding:5px' align='center'>"+
+            "<font class='time'>"+time+"</font>"+
+            "</td>"+
+            "</tr>"+
+            "<tr>"+
+            "<td align='center'>"+
+            "<table align='center' width='95%' class='singleborder_blue' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF'>"+
+            "<tr><td align='center' valign='top'>"+
+            "<table border='0' cellpadding='0' cellspacing='0' bordercolor='#99aaaa'>"+
+	    "<tr>"+
+	    "<td><div class='header' align='center'>"+
+	    getResValue('RES_PARAMETER_TRAFFIC_LOG')+
+	    "</div></td>"+
+            "</tr>"+
+            "</table>"+
+	    "<table width='95%' cellspacing='0' cellpadding='0'>"+
+	    "<tr>"+
+	    "<td align='center'>"+
+	    "<div class='small_header'>"+
+	    getResValue('RES_PARAMETER_REQUEST')+
+	    "</div></td>"+
+            "</tr>"+
+	    "<tr>"+
+            "<td class='doubleborder' align='left'><textarea class='textArea' >"+request+"</textarea></td>"+
+            "</tr>"+
+            "</table>"+
+	    "<br />"+
+            "<table width='95%' cellspacing='0' cellpadding='0'>"+
+	    "<tr>"+
+	    "<td align='center'>"+
+            "<div class='small_header'>"+
+            getResValue('RES_PARAMETER_RESPONSE')+
+            "</div></td>"+
+	    "</tr>"+
+	    "<tr>"+
+	    "<td align='left'>"+
+            "<div id='executionTime'>"+
+            getResValue('RES_PARAMETER_EXECUTION_TIME')+
+            ": <strong>"+execTime+" ms</strong></div>"+
+	    "</td>"+
+	    "</tr>"+
+            "<tr>"+
+            "<td class='doubleborder' align='left'><textarea class='textArea' >"+response+"</textarea></td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+
+	    "</table>"+
+            "</td>"+
+	    "</tr>"+	    
+            "</table>"+
+	    "<br />"+
+            "<table align='center' width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>"+
+	    "<tr>"+
+            "<td align='center'><font class='white'>&#xA9;"+
+            getResValue('RES_PARAMETER_PARASOFT')+
+            "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"+
+            getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')+
+            "&#xA0;</font></td>"+
+            "</tr>"+
+            "</table>"+
+            "</body>"+
+            "</html>");
+            doc.document.close();
+    }
+    
+    function toggleTestDetails(id, toggleElement) {
+        if (document.getElementById) {
+            var collapse = document.getElementById(id);
+            if (collapse.style.display == 'none') {
+                toggleElement.innerHTML = "[-]"
+                collapse.style.display = '';
+            } else {
+                toggleElement.innerHTML = "[+]"
+                collapse.style.display = 'none';
+            }
+        }
+    }
+    
+    function expandCollapseAllDetails(expand) {
+        if (document.getElementsByTagName) {
+            var spanList = document.getElementsByTagName('span');
+            for (var i = 0; i < spanList.length; i++) {
+                var span = spanList[i];
+                if (span.className && span.className == "toggle_button") {
+                    if (expand) {
+                        span.innerHTML = "[-]"; 
+                    } else {
+                        span.innerHTML = "[+]";
+                    }
+                }
+            }
+            var trList = document.getElementsByTagName('tr');
+            for(var i = 0; i < trList.length; i++) {
+                var tr = trList[i];
+                if (tr.className && tr.className == "details_container") {
+                    if (expand) {
+                        tr.style.display = '';
+                    } else {
+                        tr.style.display = 'none';
+                    }
+                }
+            }
+        }
+    }
+
+    function popupScreenshot(imageSrc) {
+        var win = window.open("","_blank","");
+        win.document.write("<html><head><title>"
+        + getResValue('RES_PARAMETER_SCREENSHOT_VIEWER')
+        + "</title>"
+        + "<style>"
+        + "body {background-color: #E7F0F5;}"
+        + "body, p, ol, td, pre { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal;}"
+        + "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"
+        + "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"
+        + "IMG.screenshot {border:1px solid black;}"
+        + "TD.header {font-weight:bold; border: 1px solid #99aaaa; text-align: center; width: 100%; background-color: #ccdddd;}"
+        + "</style>"
+        + "</head>"
+        + "<body>"
+        + "<table width='100%' cellpadding='0' cellspacing='0'>"
+        + "<tr>"
+        + "<td>"
+	    + generateHeader()
+	    + "<table width='100%' cellpadding='10' cellspacing='0'>"
+        + "<tr>"
+        + "<td>"
+	    + "<table align='center' width='95%' cellpadding='0' cellspacing='0' class='singleborder_blue' bgcolor='#FFFFFF' >"
+	    + "<tr>"
+        + "<td align='center'>"
+        + "<img align='center' class='screenshot' src='"+imageSrc+"'/>"
+        + "<br/>"
+        + "</td>"
+        + "</tr>"
+        + "</table>"
+        + "</td>"
+        + "</tr>"
+        + "</table>"
+        + "<table width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>" 
+        + "<tr>"
+        + "<td align='center'><font class='white'>&#xA9;"
+        + getResValue('RES_PARAMETER_PARASOFT')
+        + "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"
+        + getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')
+        + "&#xA0;</font></td>"
+        + "</tr>"
+        + "</table>"
+        + "</td>"
+        + "</tr>"
+        + "</table>"
+        + "</body>"
+        + "</html>");
+        win.document.close();
+    }
+    
+    function popupScreenshots(id) {
+        var screenshotData;
+        if (document.getElementById) {
+            var element = document.getElementById(id);
+            if (element) {
+                screenshotData = element.screenshotData;
+            }
+        }
+        
+        var win = window.open("", "_blank", "");
+        win.document.write("<html><head><title>"
+                + getResValue('RES_PARAMETER_SCREENSHOT_VIEWER')
+                +"</title>"
+                + "<style>"
+				+ "body {background-color: #E7F0F5;}"
+                + "body, p, ol, td, pre { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal;}"
+                + "FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}"
+                + "IMG.screenshot {border:1px solid black;}"
+                + "TABLE.parent {table-layout: fixed; word-wrap: break-word;}"
+                + "TABLE.screenshot_container {border: 2px solid #CBCBCB; padding: 10px; margin: 10px; display:inline-block; zoom:1; *display:inline;} /* ie hack */"
+				+ "TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}"
+                + "TD.header {font-size: 18px; text-align: center; width: 100%; COLOR: #427fb6;}"
+        		+ "DIV.header{font-size: 32px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #427fb6 }"
+                + "TD.screenshot_collection {padding: 10px; text-align: center; word-wrap: break-word;}"
+                + "TD.screenshot_label {padding: 0px; text-align: center; margin-left:auto; margin-right:auto;}"
+                + "</style>"
+                + "<script language=\x22JavaScript\x22>"
+                + "function popupScreenshot(imageSrc) {"
+                			
+		+ "var win = window.open(\x22\x22,\x22_blank\x22,\x22\x22);"
+        + "win.document.write(\x22<html><head><title>"
+        + getResValue('RES_PARAMETER_SCREENSHOT_VIEWER')
+        + "</title>\x22"
+        + "+ \x22<style>\x22"
+        + "+ \x22body {background-color: #E7F0F5;}\x22"
+        + "+ \x22body, p, ol, td, pre { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal;}\x22"
+        + "+ \x22FONT.white {font-size: 12px;font-family: Arial, Helvetica, sans-serif;color: #FFFFFF;}\x22"
+        + "+ \x22TABLE.singleborder_blue{ border:2px solid #427fb6; height: 500px; padding-left:25px; padding-right:25px; padding-bottom:25px; padding-top:5px;}\x22"
+        + "+ \x22IMG.screenshot {border:1px solid black;}\x22"
+        + "+ \x22TD.header {font-weight:bold; border: 1px solid #99aaaa; text-align: center; width: 100%; background-color: #ccdddd;}\x22"
+        + "+ \x22</style>\x22"
+        + "+ \x22</head>\x22"
+        + "+ \x22<body>\x22"
+        + "+ \x22<table width='100%' cellpadding='0' cellspacing='0'>\x22"
+        + "+ \x22<tr>\x22"
+        + "+ \x22<td>\x22"
+	    + "+ \x22<table xmlns:textutil='textutil' xmlns:authors='authors' width='100%' cellpadding='0' cellspacing='0'><tr><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='30%' align='left'>"+
+       "<img src='rep_header_logo.png' alt='rep_header_logo.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='40%' align='center'>"+
+       "<img src='rep_header_4.png' alt='rep_header_4.png'/>"    
+       +"</td><td bgcolor='#3965A6'  "+
+       "background='rep_header_expander.jpg'"    
+       +"  height='80px' width='30%' align='center'></td></tr></table>\x22"
+	    + "+ \x22<table width='100%' cellpadding='10' cellspacing='0'>\x22"
+        + "+ \x22<tr>\x22"
+        + "+ \x22<td>\x22"
+	    + "+ \x22<table align='center' width='95%' cellpadding='0' cellspacing='0' class='singleborder_blue' bgcolor='#FFFFFF' >\x22"
+	    + "+ \x22<tr>\x22"
+        + "+ \x22<td align='center'>\x22"
+        + "+ \x22<img align='center' class='screenshot' src='\x22+imageSrc+\x22'/>\x22"
+        + "+ \x22<br/>\x22"
+        + "+ \x22</td>\x22"
+        + "+ \x22</tr>\x22"
+        + "+ \x22</table>\x22"
+        + "+ \x22</td>\x22"
+        + "+ \x22</tr>\x22"
+        + "+ \x22</table>\x22"
+        + "+ \x22<table width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>\x22" 
+        + "+ \x22<tr>\x22"
+        + "+ \x22<td align='center'><font class='white'>&#xA9;"
+        + getResValue('RES_PARAMETER_PARASOFT')
+        + "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"
+        + getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')
+        + "&#xA0;</font></td>\x22"
+        + "+ \x22</tr>\x22"
+        + "+ \x22</table>\x22"
+        + "+ \x22</td>\x22"
+        + "+ \x22</tr>\x22"
+        + "+ \x22</table>\x22"
+        + "+ \x22</body>\x22"
+        + "+ \x22</html>\x22);"
+                                               
+                + "win.document.close();"
+                + "}"
+                + "<"+"/script>"
+                + "</head>"
+                
+                
+        + "<body>"
+        + "<table width='100%' cellpadding='0' cellspacing='0'>"
+        + "<tr>"
+        + "<td>"
+	    + generateHeader()
+	    + "<table width='100%' cellpadding='10' cellspacing='0'>"
+        + "<tr>"
+        + "<td>"
+	    + "<table align='center' width='95%' cellpadding='0' cellspacing='0' class='singleborder_blue' bgcolor='#FFFFFF' >"
+	    + "<tr>"
+        + "<td align='center'>"
+        
+        
+                + "<table width='95%' cellspacing='0' cellpadding='0'>"
+                + "<tr><td><div align='center' valign='top' class='header'>"
+                + getResValue('RES_PARAMETER_SCREENSHOTS')
+                + "</div></td></tr>"
+                + "</table>"
+                + "<br/>"
+                + "<table width='95%' cellspacing='0' cellpadding='0' bordercolor='#99aaaa' border='0' class='parent'>"
+                + "<tr>"
+                + "<td class='screenshot_collection' align='center'>");
+                
+
+        
+        for (var i = 0; i < screenshotData.length; ++i) {
+            var data = screenshotData[i];
+            win.document.write("<table cellspacing='0' cellpadding='0' border='0' class='screenshot_container'>"
+                + "<tr><td>"
+                + "<div onmouseover=\x22this.style.cursor='pointer';\x22 onclick=\x22popupScreenshot('"+data.src+"')\x22>"
+                + "<img class='screenshot' width='"+data.width+"' height='"+data.height+"' src='"+data.src+"'>"
+                + "</div>"
+                + "</td></tr>"
+                + "<tr><td class='screenshot_label'>"+data.label+"</td></tr>"
+                + "</table>");
+        }
+                
+        win.document.write(
+		"</td>"
+        + "</tr>"
+        + "</table>"
+        + "</td>"
+        + "</tr>"
+        + "</table>"
+        + "</br>"
+        + "<table width='100%' bgcolor='#1D488D' cellpadding='10' cellspacing='0'>" 
+        + "<tr>"
+        + "<td align='center'><font class='white'>&#xA9;"
+        + getResValue('RES_PARAMETER_PARASOFT')
+        + "&#xA0;SOAtest&#xA0;9.10.7.20190506&#xA0;"
+        + getResValue('RES_PARAMETER_REPORTIMNG_SYSTEM')
+        + "&#xA0;</font></td>"
+        + "</tr>"
+        + "</table>"
+        + "</td>"
+        + "</tr>"
+        + "</table>"
+        + "</body>"
+        + "</html>");
+        
+        win.document.close();
+    }
+    
+    function storeScreenshotData(id, src, label, width, height) {
+        if (document.getElementById) {
+            var element = document.getElementById(id);
+            if (!element.screenshotData) {
+                element.screenshotData = new Array();
+            }
+            var data = new Object();
+            data.id = id;
+            data.src = src;
+            data.label = label;
+            data.width = width;
+            data.height = height;
+            element.screenshotData.push(data);
+        }
+    }
+    </script><script language="JavaScript">
+    var ns6=document.getElementById && !document.all
+    var ie4=document.all && navigator.userAgent.indexOf("Opera")==-1
+
+    function checkcontained(e)
+    {
+       cur=ns6 ? e.target : event.srcElement;
+       
+       checkFor("foldinglist", "foldheader", cur);
+       checkFor("cs_foldinglist", "cs_foldheader", cur);
+       checkFor("cr_foldinglist", "cr_foldheader", cur);
+       checkFor("metrics_foldinglist", "metrics_foldheader", cur);
+       checkFor("exec_foldinglist", "exec_foldheader", cur);
+    }
+    
+    function checkFor(foldinglist, foldheader, cur)
+    {
+        var iscontained=0;
+        i = 0;
+        if (cur.id==foldheader) {
+           iscontained=1;
+        } 
+        while (ns6 && cur.parentNode || (ie4 && cur.parentElement)) {
+             if (cur.id==foldheader||cur.id==foldinglist){
+                iscontained=(cur.id==foldheader)? 1 : 0;
+                break;
+             }
+             cur=ns6? cur.parentNode : cur.parentElement;
+        }
+
+        if (iscontained) {
+           var foldercontent=ns6? cur.nextSibling.nextSibling : cur.all.tags("UL")[0];
+           if (foldercontent.style.display=="none"){
+               foldercontent.style.display="";
+           } else {
+               foldercontent.style.display="none";
+           }
+        }    
+    }
+    function expandCSDetails() {
+       expandCollapseAll("cs_foldinglist", true);
+    }
+
+    function collapseCSDetails() {
+       expandCollapseAll("cs_foldinglist", false);
+    }
+    
+    function expandCRDetails() {
+    expandCollapseAll("cr_foldinglist", true);
+    }
+
+    function collapseCRDetails() {
+    expandCollapseAll("cr_foldinglist", false);
+    }
+
+    function expandMetricsDetails() {
+    expandCollapseAll("metrics_foldinglist", true);
+    }
+
+    function collapseMetricsDetails() {
+    expandCollapseAll("metrics_foldinglist", false);
+    }
+
+    function expandExecDetails() {
+       expandCollapseAll("exec_foldinglist", true);
+    }
+
+    function collapseExecDetails() {
+       expandCollapseAll("exec_foldinglist", false);
+    }
+    
+    function expandCollapseAll(foldinglistID, collapse) 
+    {
+        if (document.getElementById && document.createElement) {
+            m = document.getElementById(foldinglistID).getElementsByTagName('ul');
+            var i;
+            for (i = 0; i < m.length; i++) {
+              if (collapse) {
+                 m[i].style.display='block';
+              } else {
+                 m[i].style.display='none';
+              }
+            }
+        }
+    }
+
+     if (ie4||ns6) {
+       document.onclick=checkcontained;
+    }
+
+    
+    function expandViolation(headerID, violationID, startIndex)
+    {
+        var violation = document.getElementById(violationID);
+        var m = document.getElementById(headerID).getElementsByTagName('td');
+
+        if (violation.style.display === '') {
+            violation.style.display = 'none';
+            for (i = startIndex; i < m.length; i++) {
+                m[i].style.backgroundColor = "#FFFFFF";
+            }
+        }
+        else{
+            violation.style.display = '';
+            for (i = startIndex; i < m.length; i++) {
+                m[i].style.backgroundColor = "#E0E0E0";
+            }
+        }
+    }
+    </script></head>
+<body bgcolor="#E7F0F5">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table xmlns:textutil="textutil" xmlns:authors="authors" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="30%" align="left"><img src="rep_header_logo.png" alt="rep_header_logo.png" height="54px"></td>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="40%" align="center"><img src="rep_header_4.png" alt="rep_header_4.png" height="54px"></td>
+<td bgcolor="#3965A6" background="rep_header_expander.jpg" height="80px" width="30%" align="center"></td>
+</tr>
+</table>
+<table width="100%" style="padding-left:25px;padding-right:25px;padding-bottom:25px;padding-top:0px" cellspacing="0">
+<tr>
+<td align="center">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-left:20px" align="left" width="20%">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td xmlns:textutil="textutil" xmlns:authors="authors" align="left" nowrap="true"><a class="blue_link" href="#apicov"><b>API COVERAGE &gt;</b></a></td>
+</tr>
+<tr>
+<td xmlns:textutil="textutil" xmlns:authors="authors" align="left" nowrap="true"><a class="blue_link" href="#func"><b>FUNCTIONAL TESTS &gt;</b></a></td>
+</tr>
+</table>
+</td>
+<td style="padding:10px" align="center" width="60%">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">User configuration:
+	    		&nbsp;<b>Example</b></td>
+</tr>
+<tr>
+<td width="16%" align="center"><font class="time">2019-08-09T00:20:24+05:30</font></td>
+</tr>
+</table>
+</td>
+<td style="padding-right:20px" align="right" width="20%"></td>
+</tr>
+</table>
+<table width="100%" class="singleborder_blue" style="padding-left:25px;padding-right:25px;padding-bottom:25px;padding-top:5px" cellspacing="0" bgcolor="#FFFFFF" bordercolor="#A0CAEC">
+<tr>
+<td><a name="apicov"></a><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td width="15%"></td>
+<td align="center">
+<div class="header">API COVERAGE</div>
+</td>
+<td width="15%" align="right" valign="bottom"></td>
+</tr>
+</table>
+<div style="padding-left: 5px; padding-bottom: 2px;"><a class="blue_link" style="margin-right: 5px;" href="#" onclick="expandAll()">[Expand All]</a><a class="blue_link" href="#" onclick="collapseAll()">[Collapse All]</a></div><style>
+                    .arrow {
+                        cursor: pointer;
+                        color: #666;
+                    }
+                    @media print {
+                        .bar_filler {
+                            width:100%;
+                            height:0px;
+                            border-bottom:14px solid #008000;
+                        }
+                    }
+                    .detailLink {
+                        text-decoration: underline;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        color: #990000;
+                        padding-left: 2em;
+                        cursor: pointer;
+                    }
+                </style><style type="text/css">
+                    TD.testdetails{ border-top: 1px solid white; border-bottom: 1px solid white; border: 1px solid white; background-color: #f3f3f3}
+                </style><script>
+                    if (document.documentMode && document.documentMode == 5) {
+                        var css = ".bar_filler {margin-top: -15px;}",
+                        head = document.head || document.getElementsByTagName('head')[0],
+                        style = document.createElement('style');
+                        style.type = 'text/css';
+                        if (style.styleSheet){
+                            style.styleSheet.cssText = css;
+                        } else {
+                            style.appendChild(document.createTextNode(css));
+                        }
+                        head.appendChild(style);
+                    }
+                </script><table id="apicoveragetbl" class="singleborder" width="100%" border="0" bordercolor="#CBCBCB" cellpadding="2" cellspacing="0">
+<tr>
+<td align="center" class="singleborder" bgcolor="#F3F3F3" nowrap width="60%"><b>Coverable Resource</b></td>
+<td align="center" class="singleborder" bgcolor="#F3F3F3" nowrap width="10%"><b>Successful / Total</b></td>
+<td align="center" class="singleborder" bgcolor="#F3F3F3" nowrap width="30%"><b>Coverage</b></td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="1">
+<td class="singleborder">
+<div style="word-wrap: break-word; max-width: 680px;"><span class="arrow">&#9660;</span>Unknown Service
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/1
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/2
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/3
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/4
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/5
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="2">
+<td class="singleborder">
+<div style="padding-left: 2em; word-wrap: break-word; max-width: 660px;"><span class="arrow">&#9660;</span>https://reqres.in/api/users/6
+</div>
+</td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr onclick="clickRow(this.rowIndex);" level="3">
+<td class="singleborder" onMouseOut="hideDetailLink(this)" onMouseOver="showDetailLink(this)">
+<div style="padding-left: 4em; word-wrap: break-word; max-width: 580px; display: inline;">GET</div><span style="display:none;" isDetailLink="true" class="detailLink" onclick="toggleScopeDetails(event, this.parentNode);">Show tests</span></td>
+<td class="singleborder" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="singleborder" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="4" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 6em; word-wrap: break-word; max-width: 620px;">Demo/Success.tst</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+<tr class="detailRow" level="5" test_detail="true">
+<td class="testdetails">
+<div style="padding-left: 8em; word-wrap: break-word; max-width: 600px;">Test Suite: Test Suite/Test 1: REST Client</div>
+</td>
+<td class="testdetails" nowrap align="center">6&nbsp;/&nbsp;6</td>
+<td class="testdetails" align="center">&nbsp;</td>
+</tr>
+</table><script language="JavaScript">
+                    // This script handles show/hide of table rows in the API Coverage section.
+                    // We use an array of booleans to track whether each row (node) in the table
+                    // has been collapsed or not.
+                    var collapse = [];
+                    var details = [];
+                    function init() {
+                        // Builds the array of booleans - only called once after the table loads
+                        var tbl = document.getElementById("apicoveragetbl");
+                        for (var i = 1; i < tbl.rows.length; i++) {
+                            // collapse all rows by default
+                            var row = tbl.rows[i];
+                            var level = parseInt(row.getAttribute("level"));
+                            collapse[i] = true;
+                            if (isTestDetails(row)) {
+                                details[i] = false;
+                            }
+                            updateRow(row, (level != 1));
+                            updateArrow(row, true);
+                        }
+                    }
+                    init();
+
+                    function isTestDetails(row) {
+                        return !!row.getAttribute("test_detail");
+                    }
+
+                    function clickRow(idx) {
+                        // Called when a row is clicked - needs to show/hide child nodes
+                        var tbl = document.getElementById("apicoveragetbl");
+                        var row = tbl.rows[idx];
+                        var level = parseInt(row.getAttribute("level"));
+                        collapse[idx] = !collapse[idx];
+                        updateArrow(row, collapse[idx]);
+                        for (var i = idx+1; i < tbl.rows.length; i++) {
+                            // We go through each row, starting at the row after the one that
+                            // was clicked (first potential child) to the next node at the same
+                            // level (which cannot be a child)
+                            var cur_level = parseInt(tbl.rows[i].getAttribute("level"));
+                            if (cur_level > level) {
+                                // This is a child node - update it
+                                // Note: we never hide root nodes
+                                var currentRow = tbl.rows[i];
+                                if (!isTestDetails(currentRow)) {
+                                    updateRow(currentRow, shouldHide(tbl, i));
+                                }
+                            } else {
+                                // Node at same or higher level - cannot be a child - quit here
+                                break;
+                            }
+                        }
+                    }
+
+                    function updateArrow(row, collapsed) {
+                        var spans = row.cells[0].getElementsByTagName("span");
+                        if (spans.length > 0) {
+                            var link = spans[0].getAttribute("isDetailLink");
+                            if (!link) {
+                                spans[0].innerHTML = collapsed ? "►" : "▼";
+                            }
+                        }
+                    }
+
+                    function shouldHide(tbl, idx) {
+                        // Searches for a parent node for which collapse == true
+                        var level = tbl.rows[idx].getAttribute("level");
+                        for (var i = idx-1; i > 0; i--) {
+                            var cur_level = parseInt(tbl.rows[i].getAttribute("level"));
+                            if (cur_level < level) {
+                                if (collapse[i]) {
+                                    return true;
+                                } else if (cur_level == 1) {
+                                    // Stop at top level - we don't want to look outside our tree
+                                    return false;
+                                }
+                                level = cur_level;
+                            }
+                        }
+                        return false;
+                    }
+
+                    function updateRow(row, hide) {
+                        // Either hides or shows a given row
+                        row.style.display = hide ? 'none' : 'table-row';
+                        var spans = row.cells[0].getElementsByTagName("span");
+                        if (spans.length > 0) {
+                            var link = spans[0].getAttribute("isDetailLink");
+                            if (link && link == "true") {
+                                if (details[row.rowIndex] && hide) {
+                                    toggleDetails(row.cells[0]);
+                                    hideDetailLink(row.cells[0]);
+                                }
+                            }
+                        }
+                    }
+
+                    function showDetailLink(tableData) {
+                        var tbl = document.getElementById("apicoveragetbl");
+                        var rowId = tableData.parentNode.rowIndex;
+                        var detailsRow = tbl.rows[rowId + 1];
+                        if (detailsRow) {
+                            var hasDetail = detailsRow.getAttribute("test_detail");
+                            if (hasDetail) {
+                                var spans = tableData.getElementsByTagName("span");
+                                if (spans.length > 0) {
+                                    spans[0].style.display = "inline";
+                                }
+                            }
+                        }
+                    }
+
+                    function hideDetailLink(tableData) {
+                        var spans = tableData.getElementsByTagName("span");
+                        var rowId = tableData.parentNode.rowIndex;
+                        if (!details[rowId] && spans.length > 0) {
+                            spans[0].style.display = "none";
+                        }
+                    }
+
+                    function toggleScopeDetails(event, tableData) {
+                        //prevent bubbling
+                        event = event || window.event;
+                        if (event.stopPropagation) {
+                            event.stopPropagation();
+                        } else {
+                            event.cancelBubble = true;
+                        }
+                        toggleDetails(tableData);
+                    }
+
+                    function toggleDetails(tableData) {
+                        var tbl = document.getElementById("apicoveragetbl");
+                        var rowId = tableData.parentNode.rowIndex;
+                        var spans = tableData.getElementsByTagName("span");
+                        details[rowId] = !details[rowId];
+                        if (spans.length > 0) {
+                            if (details[rowId]) {
+                                spans[0].innerHTML = "Hide tests";
+                            } else {
+                                spans[0].innerHTML = "Show tests";
+                            }
+                        }
+                        for (var i = rowId+1; i < tbl.rows.length; i++) {
+                            row = tbl.rows[i];
+                            var testDetail = row.getAttribute("test_detail");
+                            if (testDetail) {
+                                var display = row.style.display;
+                                if (display == "none") {
+                                    row.style.display="table-row";
+                                } else {
+                                    row.style.display="none";
+                                }
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+
+                    function expandAll() {
+                        var tbl = document.getElementById("apicoveragetbl");
+                        for (var i = 1; i < tbl.rows.length; i++) {
+                            var row = tbl.rows[i];
+                            collapse[i] = false;
+                            updateArrow(row, false);
+                            if (!isTestDetails(row)) {
+                                updateRow(row, false);
+                            }
+                        }
+                    }
+
+                    function collapseAll() {
+                        var tbl = document.getElementById("apicoveragetbl");
+                        for (var i = 1; i < tbl.rows.length; i++) {
+                            var row = tbl.rows[i];
+                            var level = parseInt(row.getAttribute("level"));
+                            collapse[i] = true;
+                            updateArrow(row, true);
+                            if (level > 1) {
+                                updateRow(row, true);
+                            }
+                        }
+                    }
+                </script><br><a name="func"></a><table width="100%" border="0" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td width="15%"></td>
+<td align="center">
+<div class="header">FUNCTIONAL TESTS</div>
+</td>
+<td width="15%" align="right" valign="bottom"><a xmlns:textutil="textutil" xmlns:authors="authors" class="blue_link" href="#top">Back to Top </a>&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table><br><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<div class="small_header">Test Suite Summary</div>
+</td>
+</tr>
+</table>
+<table class="singleborder" width="100%" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td class="singleborder" bgcolor="#F3F3F3" width="45%" align="center"><b>Name [Succeeded/Total]</b></td>
+<td class="singleborder" bgcolor="#F3F3F3" align="center" width="11%"><b>Failed Tests</b></td>
+<td class="singleborder" bgcolor="#F3F3F3" align="center" width="11%"><b>Successful Tests</b></td>
+<td class="singleborder" bgcolor="#F3F3F3" align="center" width="11%"><b>Total Tests</b></td>
+<td class="singleborder" bgcolor="#F3F3F3" align="center" width="11%"><b>Success %</b></td>
+<td class="singleborder" bgcolor="#F3F3F3" align="center" width="11%"><b>Total Tasks</b></td>
+</tr>
+<tr>
+<td align="left" width="45%" class="singleborder">&nbsp;<b>Total</b></td>
+<td width="11%" align="right" class="singleborder">0&nbsp;</td>
+<td width="11%" align="right" class="singleborder">6&nbsp;</td>
+<td width="11%" align="right" class="singleborder">6&nbsp;</td>
+<td width="11%" align="right" class="singleborder">100%&nbsp;</td>
+<td width="11%" align="right" class="singleborder">0&nbsp;</td>
+</tr>
+<tr>
+<td align="left" class="singleborder" style="padding-left:5px;" colspan="6">
+<table width="100%" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" colspan="2" style="padding-left:0px"><b>Demo/Success.tst
+- Test Suite: Test Suite</b><font class="gray"> [ 6 / 6 ]</font></td>
+</tr>
+<tr>
+<td align="left" class="no_error" style="padding-left:20px">Test 1: REST Client</td>
+<td align="right" class="no_error"><font class="green"><b>0&nbsp;</b></font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><br></td>
+</tr>
+</table><script language="JavaScript">
+    if(document.getElementById("cs_link_sev") != null) {
+    document.getElementById("cs_link_sev").style.color="#990000";
+    document.getElementById("cs_link_sev").style.textDecoration="underline";
+    }
+    if(document.getElementById("cs_link_sevtrue") != null) {
+    document.getElementById("cs_link_sevtrue").style.color="#990000";
+    document.getElementById("cs_link_sevtrue").style.textDecoration="underline";
+    }
+    </script></td>
+</tr>
+</table>
+<table width="100%" bgcolor="#1D488D" border="0" bordercolor="#999999" cellpadding="10" cellspacing="0">
+<tr>
+<td align="center"><font class="white">&copy;Parasoft Corp. -&nbsp;SOAtest&nbsp;9.10.7.20190506&nbsp;Reporting System&nbsp;</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
