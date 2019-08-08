@@ -1,0 +1,9 @@
+[ERROR] [23:58:36,614] Thread-6 com.parasoft.xtest.util.Logger: Shutdown in progress
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at com.parasoft.xtest.util.UThread.addShutdownHook(UThread.java:146)
+	at com.parasoft.xtest.util.profiler.Profiler.<clinit>(Profiler.java:371)
+	at com.parasoft.xtest.util.async.AsyncCallHandler.invoke(AsyncCallHandler.java:65)
+	at com.parasoft.xtest.application.api.license.ULicenseManager.releaseLicense(ULicenseManager.java:313)
+	at com.parasoft.xtest.application.api.license.ULicenseManager$24.run(ULicenseManager.java:1097)

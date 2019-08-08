@@ -1,0 +1,3 @@
+[ERROR] [23:58:57,748] main com.parasoft.xtest.checkers.api.rules.RulesCore: URL is nul in rule provider com.parasoft.xtest.execution.eclipse.core.web.checker
+[INFO ] [23:59:03,123] Framework stop com.parasoft.stub.deployment.Logger: Shutting down current deployments.
+[INFO ] [23:59:03,279] Framework stop com.parasoft.stub.deployment.Logger: Shutdown of deployments finished.

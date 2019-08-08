@@ -386,3 +386,23 @@ Command-line arguments:  -noupdate -data parasoft_demo -application com.parasoft
 
 !ENTRY org.eclipse.core.resources 2 10035 2019-08-08 23:48:54.851
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2019-08-08 23:57:31.208 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -import parasoft_demo
+Command-line arguments:  -noupdate -data parasoft_demo -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -import parasoft_demo
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-08 23:57:44.473
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2019-08-08 23:57:47.036 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -noupdate -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html -fail
+Command-line arguments:  -noupdate -data parasoft_demo -application com.parasoft.xtest.testcases.eclipse.core.web.WebTestApplication -config user://Example -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html -fail
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-08-08 23:57:49.114
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
