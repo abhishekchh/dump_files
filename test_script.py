@@ -14,6 +14,7 @@ runIndex = -1;
 resultIndex = -1;
 nameIndex = -1;
 reportIndex = -1;
+envSetupIndex = -1;
 now = datetime.now()
 current_time = now.strftime("%Y%m%d-%H%M%S")
 reportFolder = 'Reports/' + current_time
@@ -46,6 +47,8 @@ def getColIndex(argument):
 			nameIndex = i
 		elif(argument[i]=='folderName'):
 			folderIndex = i
+		elif(argument[i]=='envSetup'):
+			envSetupIndex = i
 	resultIndex = len(argument)
 
 def readCsv(filename):
@@ -73,6 +76,9 @@ print('executing tests')
 for row in rows:
 	x = ''
 	if(row[runIndex]=='y'):
+		print row[envSetupIndex]
+		print row[commandIndex]
+		os.system(row[envSetupIndex])
 		x=os.system(row[commandIndex])
 		if(x==0):
 			success = success + 1
