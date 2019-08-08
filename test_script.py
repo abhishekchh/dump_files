@@ -87,6 +87,7 @@ for row in rows:
 			failed = failed + 1
 			testResult = 'FAILED'
 		if(row[reportIndex]!=''):
+			print ("moving report file "+row[reportIndex])
 			os.system('mv '+row[reportIndex]+'* ' +reportFolder +'/'+row[nameIndex] )
 		else:
 			os.system('echo "report file Destination not defined; This is a place holder"> ' +reportFolder +'/'+row[nameIndex] +'-report.txt' )
