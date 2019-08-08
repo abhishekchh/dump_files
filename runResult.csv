@@ -4,5 +4,5 @@ JXLPOI-SoapUI-Test, SoapUI-Groovy, mvn -f SoapUI-Groovy test -DresultFile=./Soap
 Karate, karatetest, mvn -f karatetest test , n, karatetest/target/surefire-reports, NOT_RUN
 Karate-WithReporting, karateParellelRunner, mvn -f karateParellelRunner test, n, karateParellelRunner/target/cucumber-html-reports, NOT_RUN
 RestAssured, restassured, mvn test -Dtest=CucumberTests -f restassured, n, restassured/target/cucumber-report, NOT_RUN
-Parasoft, parasoft_demo, soatestcli -data parasoft_demo -config 'user://Example' -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html, y, parasoft_demo/Report, FAILED
-Parasoft_2, parasoft_demo, soatestcli -data parasoft_demo -config 'user://Example' -resource Demo/Fail.tst -report parasoft_demo\Report\Demo2.html, y, parasoft_demo/Report, FAILED
+Parasoft, parasoft_demo, soatestcli -data parasoft_demo -config "user://Example" -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html, y, parasoft_demo/Report, FAILED
+Parasoft_2, parasoft_demo, soatestcli -data parasoft_demo -config "user://Example" -resource Demo/Fail.tst -report parasoft_demo\Report\Demo2.html, y, parasoft_demo/Report, FAILED
