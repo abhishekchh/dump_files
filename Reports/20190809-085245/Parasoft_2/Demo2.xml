@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ResultsSession buildId="Default Project-2019-08-09" date="08/09/19 08:54:28" machine="indbdcsv01" project="Default Project" tag="Example" time="2019-08-09T08:54:28+05:30" toolName="SOAtest" toolVer="9.10.7.20190506" user="indbdcsv01$">
+   <TestConfig machine="indbdcsv01" name="Example" pseudoUrl="soatest.user://Example" user="indbdcsv01$" />
+   <Authors>
+      <Author id="dev1" name="indbdcsv01$" />
+   </Authors>
+   <VersionInfos>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="IFunctionalTestViolation" ver="3" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="ICoverageCalculationResult" ver="1" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.codereview" resultId="ICodeReviewUndefinedAuthorsInfo" ver="1" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.codereview" resultId="ICodeReviewScannerInfo" ver="2" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.scope" resultId="IScopeProjectInfo" ver="3" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricsViolation" ver="2" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IDupCodeViolation" ver="2" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricEstimationInfo" ver="2" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IFlowAnalysisViolation" ver="2" />
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="ICodingStandardsViolation" ver="2" />
+   </VersionInfos>
+   <Exec assoc="true">
+      <AssocUrls>
+         <Tag disp="Problem report" name="pr" />
+         <Tag disp="Task" name="task" />
+         <Tag disp="Asset" name="asset" />
+         <Tag disp="Feature request" name="fr" />
+         <Tag disp="Requirement" name="req" />
+      </AssocUrls>
+   </Exec>
+   
+   
+      <ExecutedTestsDetails type="FT">
+         <Total authChange="0;" authFail="6;" change="0" changePass="0" changeTotal="0" fail="6" name="Passed / Total" pass="0" time="0:00:02.188" total="6">
+            <Project authChange="0;" authFail="6;" change="0" changePass="0" changeTotal="0" fail="6" name="Demo" pass="0" time="0:00:02.188" total="6">
+               <TestSuite authChange="0;" authFail="6;" change="0" changePass="0" changeTotal="0" fail="6" id="wk:///Demo/Fail.tst" name="Fail.tst" pass="0" time="0:00:02.188" total="6">
+                  <TestSuite auth="indbdcsv01$" authChange="0;" authFail="6;" change="0" changePass="0" changeTotal="0" fail="6" id="wk:///Demo/Fail.tst#0000000000" name="Test Suite: Test Suite" pass="0" root="true" time="0:00:02.188" total="6">
+                     <Test auth="indbdcsv01$" authChange="0;" authFail="6;" change="0" changePass="0" changeTotal="0" fail="6" id="wk:///Demo/Fail.tst#0000000000#0000000002" name="Test 1: REST Client" pass="0" time="0:00:02.188" tool="REST Client" total="6">
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498395" params="Input (row 1)" pass="0" startTime="1565321069404" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:01.313" />
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498426" params="Input (row 2)" pass="0" startTime="1565321070717" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:00.234" />
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498457" params="Input (row 3)" pass="0" startTime="1565321070951" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:00.219" />
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498488" params="Input (row 4)" pass="0" startTime="1565321071170" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:00.187" />
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498519" params="Input (row 5)" pass="0" startTime="1565321071357" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:00.204" />
+                        <TestCase authChange="0;" authFail="1;" change="0" changePass="0" fail="1" id="3714129973245498550" params="Input (row 6)" pass="0" startTime="1565321071561" testId="wk:///Demo/Fail.tst#0000000000#0000000002" time="0:00:00.031" />
+                     </Test>
+                  </TestSuite>
+               </TestSuite>
+            </Project>
+         </Total>
+      </ExecutedTestsDetails>
+   
+   <Scope>
+      <ProjectInformations>
+         <ScopeProjectInfo fltFiles="1" fltLns="36" project="/Demo" totFiles="1" totLns="36" />
+      </ProjectInformations>
+   </Scope>
+   <APICoverage>
+      <service type="Unknown Service">
+         <resource id="https://reqres.in/api/users/31546">
+            <operation name="GET">
+               <test-ref id="wk:///Demo/Fail.tst#0000000000#0000000002" />
+            </operation>
+         </resource>
+         <resource id="https://reqres.in/api/users/32132">
+            <operation name="GET">
+               <test-ref id="wk:///Demo/Fail.tst#0000000000#0000000002" />
+            </operation>
+         </resource>
+         <resource id="https://reqres.in/api/users/53435">
+            <operation name="GET">
+               <test-ref id="wk:///Demo/Fail.tst#0000000000#0000000002" />
+            </operation>
+         </resource>
+         <resource id="https://reqres.in/api/users/53453">
+            <operation name="GET">
+               <test-ref id="wk:///Demo/Fail.tst#0000000000#0000000002" />
+            </operation>
+         </resource>
+         <resource id="https://reqres.in/api/users/53454">
+            <operation name="GET">
+               <test-ref id="wk:///Demo/Fail.tst#0000000000#0000000002" />
+            </operation>
+         </resource>
+      </service>
+   </APICoverage>
+   <FunctionalTests ownerId="com.parasoft.xtest.checkers.api.execution" time="0:00:02">
+      <Goals>
+         <Goal mode="1" name="Functional Test Violations" type="4" />
+         <Goal mode="1" name="Runtime Error Detection Violations" type="5" />
+      </Goals>
+      
+  <FuncViols>
+    <FuncViol msg="DataSource: Input (row 1): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="238" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/53453 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 1)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54519724" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:30 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=d74064dd8f49cecb602dc6f117f5f82a01565321070; expires=Sat, 08-Aug-20 03:24:30 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: EXPIRED&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:30 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e115c72cf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54519962" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+    <FuncViol msg="DataSource: Input (row 2): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="210" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/32132 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 2)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54520160" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:30 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=d74064dd8f49cecb602dc6f117f5f82a01565321070; expires=Sat, 08-Aug-20 03:24:30 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: EXPIRED&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:30 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e141b0dcf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54520370" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+    <FuncViol msg="DataSource: Input (row 3): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="199" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/31546 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 3)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54520390" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:31 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=d74064dd8f49cecb602dc6f117f5f82a01565321070; expires=Sat, 08-Aug-20 03:24:30 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: EXPIRED&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:31 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e158e6bcf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54520589" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+    <FuncViol msg="DataSource: Input (row 4): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="189" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/53454 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 4)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54520598" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:31 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=dfcbec642b01d67f6f74ebece6c5d8e9f1565321071; expires=Sat, 08-Aug-20 03:24:31 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: EXPIRED&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:31 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e16d9c9cf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54520788" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+    <FuncViol msg="DataSource: Input (row 5): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="194" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/53435 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 5)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54520800" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:31 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=dfcbec642b01d67f6f74ebece6c5d8e9f1565321071; expires=Sat, 08-Aug-20 03:24:31 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: EXPIRED&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:31 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e181cf8cf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54520994" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+    <FuncViol msg="DataSource: Input (row 6): Received HTTP Response Code 404: Not Found" ln="-1" serverResponseTime="6" auth="indbdcsv01$" fatal="false" taskType="Miscellaneous Errors" cat="11" lang="web" urgent="true" requestTrafficHeaders="GET /api/users/53435 HTTP/1.1&#xd;&#xa;Host: reqres.in" chainedToolId="" responseTrafficMIMEType="application/json" sev="1" violationDetails="{}" testParams="Input (row 6)" tool="soatest" responseTrafficBody="{}" requestTrafficTime="54521004" requestTrafficMIMEType="text/xml" responseTrafficHeaders="HTTP/1.1 404 Not Found&#xd;&#xa;Date: Fri, 09 Aug 2019 03:24:31 GMT&#xd;&#xa;Content-Type: application/json; charset=utf-8&#xd;&#xa;Content-Length: 2&#xd;&#xa;Connection: keep-alive&#xd;&#xa;Set-Cookie: __cfduid=dfcbec642b01d67f6f74ebece6c5d8e9f1565321071; expires=Sat, 08-Aug-20 03:24:31 GMT; path=/; domain=.reqres.in; HttpOnly; Secure&#xd;&#xa;X-Powered-By: Express&#xd;&#xa;Access-Control-Allow-Origin: *&#xd;&#xa;Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;&#xd;&#xa;Via: 1.1 vegur&#xd;&#xa;CF-Cache-Status: HIT&#xd;&#xa;Age: 0&#xd;&#xa;Expires: Fri, 09 Aug 2019 07:24:31 GMT&#xd;&#xa;Cache-Control: public, max-age=14400&#xd;&#xa;Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;&#xd;&#xa;Server: cloudflare&#xd;&#xa;CF-RAY: 50369e19580bcf60-IAD" locType="sr" config="1" hash="1406759681" responseTrafficTime="54521010" testCaseId="wk:///Demo/Fail.tst#0000000000#0000000002" locFile="/Demo/Fail.tst" />
+  </FuncViols>
+
+      
+      <Categories>
+         <Category desc="" id="4" label="Fix Functional Test Violations" label0="Fix Functional Test" label1="Violations" name="Functional Test Violations">
+            <SubCategory id="8" name="Functional Failures" short="functional failure" />
+            <SubCategory id="10" name="XML Validation Errors" short="XML validation error" />
+            <SubCategory id="11" name="Miscellaneous Errors" short="miscellaneous error" />
+         </Category>
+         <Category desc="" id="6" label="Review Change Impact" label0="Review" label1="Change Impact" name="Change Impact">
+            <SubCategory id="16" name="Change Impact" short="change impact" />
+         </Category>
+      </Categories>
+   </FunctionalTests>
+   <AssocUrls>
+      <Tag disp="Problem report" name="pr" />
+      <Tag disp="Task" name="task" />
+      <Tag disp="Asset" name="asset" />
+      <Tag disp="Feature request" name="fr" />
+      <Tag disp="Requirement" name="req" />
+   </AssocUrls>
+</ResultsSession>
