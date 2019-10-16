@@ -1,4 +1,5 @@
 # importing csv module 
+# importing csv module 
 import csv 
 import os
 import array
@@ -26,19 +27,14 @@ current_time = now.strftime("%Y%m%d-%H%M%S")
 reportFolder = 'Reports/' + current_time
 result =''
 csvLines = ''
+rowsCopy = []
 threadCount = 3
-
-# csv file name 
-filename = "list.csv"
-os.system('mkdir "'+reportFolder +'"')
-os.system("mkdir logs")
- 
+headers=''
 
 def saveResult(filecontent):
 	f = open('runResult.csv', 'w+')
 	f.write(filecontent)
 	f.close()
-
 	
 def getColIndex(argument):
 	global commandIndex
@@ -116,51 +112,53 @@ def worker():
 		execute(r)
 	print ("")
 
-
-# reading csv file 
-readCsv(filename)
-
-# printing the field names 
-#print('Field names are:' + ', '.join(field for field in fields)) 
-
-headers = ', '.join(field for field in fields)
-headers= headers + ', result\n'
-
-
-getColIndex(fields)
-
-print('executing tests') 
-
-
-rowsCopy = list(rows)
-
-testcaseCount = len(rows)
-
-threads = []
-for x in range(threadCount):
-	print ("adding thread")
-	threads.append(threading.Thread(target=worker, name=('thread'+str(x+1))))
-
+def main():
+	global rowsCopy;
+	global headers
+	# csv file name 
+	filename = "list.csv"
+	os.system('mkdir "'+reportFolder +'"')
+	os.system("mkdir logs")
 	
-for x in range(threadCount):
-	#print("starting thread " + str(x))
-	time.sleep(0.5)	
-	threads[x].start()
+	# reading csv file 
+	readCsv(filename)
 
-for x in range(threadCount):
-	#print("starting thread " + str(x))
-	threads[x].join()
+	headers = ', '.join(field for field in fields)
+	headers= headers + ', result\n'
+
+	getColIndex(fields)
+
+	print('executing tests') 
+
+	rowsCopy = list(rows)
+	testcaseCount = len(rows)
+
+	threads = []
+	for x in range(threadCount):
+		print ("adding thread")
+		threads.append(threading.Thread(target=worker, name=('thread'+str(x+1))))
+		
+	for x in range(threadCount):
+		#print("starting thread " + str(x))
+		time.sleep(0.5)	
+		threads[x].start()
+
+	for x in range(threadCount):
+		#print("starting thread " + str(x))
+		threads[x].join()
+
+	print('\n\n============================================')
+	print('TEST RUN COMPLETED')
+	print('Total success runs\t =%3d \nTotal failed runs\t =%3d \nTests marked as no run\t =%3d' %(success,failed,noRun)) 
+	print('============================================')
+
+	saveResult(result)
+
+	print("Script execution time is ")
+	print(datetime.now().replace(microsecond=0) - startTime)
+	print("end of script")
 
 
-
-
-print('\n\n============================================')
-print('TEST RUN COMPLETED')
-print('Total success runs\t =%3d \nTotal failed runs\t =%3d \nTests marked as no run\t =%3d' %(success,failed,noRun)) 
-print('============================================')
-
-saveResult(result)
-
-print("Script execution time is ")
-print(datetime.now().replace(microsecond=0) - startTime)
-print("end of script")
+if __name__ == '__main__':
+	main()
+	
