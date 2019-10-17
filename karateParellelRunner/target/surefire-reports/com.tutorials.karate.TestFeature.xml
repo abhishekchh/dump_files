@@ -1,5 +1,5 @@
-<testsuite failures="1" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="2.077061">
-  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="2.077061">
+<testsuite failures="1" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="13.737208">
+  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="13.737208">
     <failure message="TestFeature.feature:8 - path: $.per_page, actual: 6, expected: 3, reason: not equal (Integer)">Given url 'https://reqres.in/api/users?page=2' ............................ passed
 When method GET ........................................................... passed
 Then status 200 ........................................................... passed

@@ -1,30 +1,32 @@
-23:14:40.056 request:
+23:22:49.856 request:
 1 > GET https://reqres.in/api/users/3
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-23:14:41.249 response time in milliseconds: 1186.70
+23:22:57.181 response time in milliseconds: 7294.96
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 900
+1 < Age: 1397
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 527414f4ae7dc1e8-IAD
+1 < CF-RAY: 52742114ea63e0da-IAD
 1 < Cache-Control: public, max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 17 Oct 2019 17:44:40 GMT
+1 < Date: Thu, 17 Oct 2019 17:52:57 GMT
 1 < Etag: W/"a5-YtUhMQeiVyAJI9FGsVEf99fz6Xw"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: Thu, 17 Oct 2019 21:44:40 GMT
+1 < Expires: Thu, 17 Oct 2019 21:52:57 GMT
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dfaeeae004bbb3c7ed1857c54e5a236101571334280; expires=Fri, 16-Oct-20 17:44:40 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+1 < Set-Cookie: __cfduid=df8c7fb27e24f4030f35eb04fc60da3e21571334777; expires=Fri, 16-Oct-20 17:52:57 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 {"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"}}
+
+olegpogodaev/128.jpg"}}
 
 godaev/128.jpg"}}
 
