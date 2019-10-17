@@ -1,28 +1,30 @@
-22:59:40.020 request:
+23:14:39.991 request:
 1 > GET https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-22:59:40.632 response time in milliseconds: 610.27
+23:14:41.278 response time in milliseconds: 1285.23
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 6562
+1 < Age: 261
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 5273fefb4d80cf18-IAD
+1 < CF-RAY: 527414f98b4be0aa-IAD
 1 < Cache-Control: public, max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 17 Oct 2019 17:29:40 GMT
+1 < Date: Thu, 17 Oct 2019 17:44:41 GMT
 1 < Etag: W/"aa-yZW/45DWGt/1ri05OLnMt/FJ3RY"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: Thu, 17 Oct 2019 21:29:40 GMT
+1 < Expires: Thu, 17 Oct 2019 21:44:41 GMT
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=da992236175f7ade98050f800e224eae71571333380; expires=Fri, 16-Oct-20 17:29:40 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+1 < Set-Cookie: __cfduid=d2986d64a5eeee6557fdda91820af7ba81571334281; expires=Fri, 16-Oct-20 17:44:41 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"}}
+
+r/josephstein/128.jpg"}}
 
