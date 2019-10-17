@@ -1,42 +1,24 @@
-<testsuite failures="2" name="com/tutorials/karate/User.feature" skipped="0" tests="2" time="12.963123">
-  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="6.480035">
-    <failure message="User.feature:5 - &#10;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">Given url 'https://reqres.in/api/users/2' ................................. passed
-When method GET ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: User.feature:5 - 
-javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#13;
-	at ✽.When method GET (User.feature:5)&#13;
-
-Then status 200 ........................................................... skipped
-And match $.data contains {id:2} .......................................... skipped
-And match $.data contains {email:"janet.weaver@reqres.in"} ................ skipped
-And match $.data contains {first_name:"Janet"} ............................ skipped</failure>
+<testsuite failures="0" name="com/tutorials/karate/User.feature" skipped="0" tests="2" time="2.540609">
+  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="1.275212">
+    <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data contains {id:2} .......................................... passed
+And match $.data contains {email:"janet.weaver@reqres.in"} ................ passed
+And match $.data contains {first_name:"Janet"} ............................ passed</system-out>
   </testcase>
-  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="6.483088">
-    <failure message="User.feature:13 - &#10;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">Given url 'https://reqres.in/api/users/2' ................................. passed
-When method GET ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: User.feature:5 - 
-javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#13;
-	at ✽.When method GET (User.feature:5)&#13;
-
-Then status 200 ........................................................... skipped
-And match $.data contains {id:2} .......................................... skipped
-And match $.data contains {email:"janet.weaver@reqres.in"} ................ skipped
-And match $.data contains {first_name:"Janet"} ............................ skipped
+  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="1.265397">
+    <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data contains {id:2} .......................................... passed
+And match $.data contains {email:"janet.weaver@reqres.in"} ................ passed
+And match $.data contains {first_name:"Janet"} ............................ passed
 Given url 'https://reqres.in/api/users/3' ................................. passed
-When method GET ........................................................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: User.feature:13 - 
-javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#13;
-	at ✽.When method GET (User.feature:13)&#13;
-
-Then status 200 ........................................................... skipped
-And match $.data contains {id:3} .......................................... skipped
-And match $.data contains {email:"emma.wong@reqres.in"} ................... skipped
-And match $.data contains {first_name:"Emma"} ............................. skipped</failure>
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data contains {id:3} .......................................... passed
+And match $.data contains {email:"emma.wong@reqres.in"} ................... passed
+And match $.data contains {first_name:"Emma"} ............................. passed</system-out>
   </testcase>
 </testsuite>
