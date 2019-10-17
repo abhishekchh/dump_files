@@ -76,9 +76,10 @@ def execute(row):
 	global success
 	x = ''
 	if(row[runIndex]=='y'):
+		print("Setting up environment for "+ row[nameIndex])
+		os.system(row[envSetupIndex])		
 		print ("runnng test: " + row[nameIndex])
 		print ("Executing command: "+row[commandIndex])
-		#os.system(row[envSetupIndex])
 		x=os.system(row[commandIndex] + " 1> logs/" + row[nameIndex]+".log 2>logs/"+row[nameIndex]+".err")
 		if(x==0):
 			success = success + 1
