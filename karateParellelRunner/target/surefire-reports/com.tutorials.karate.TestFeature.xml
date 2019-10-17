@@ -1,0 +1,15 @@
+<testsuite failures="1" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="6.482481">
+  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="6.482481">
+    <failure message="TestFeature.feature:4 - &#10;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target">Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: TestFeature.feature:4 - 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&#13;
+	at ✽.When method GET (TestFeature.feature:4)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ contains {page:2,per_page:3,total_pages:4} .................... skipped
+And match $.data[0] contains {id:4,email:"eve.holt@reqres.in"} ............ skipped</failure>
+  </testcase>
+</testsuite>

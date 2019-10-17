@@ -1,5 +1,4 @@
-# importing csv module 
-# importing csv module 
+import sys
 import csv 
 import os
 import array
@@ -22,6 +21,7 @@ resultIndex = -1;
 nameIndex = -1;
 reportIndex = -1;
 envSetupIndex = -1;
+criticalIndex = -1;
 now = datetime.now()
 current_time = now.strftime("%Y%m%d-%H%M%S")
 reportFolder = 'Reports/' + current_time
@@ -31,12 +31,24 @@ rowsCopy = []
 threadCount = 3
 headers=''
 f=''
+criticalTag =''
 
 def saveResult(line):
 	global f
 	csvWriter = csv.writer(f,delimiter=',',quotechar='"')
 	csvWriter.writerow(line)
 	
+	
+def getCriticalValue(key):
+	if(key == 'high'):
+		value=5
+	elif(key == 'medium'):
+		value=3
+	elif(key == 'low'):
+		value=0
+	else:
+		value=0;
+	return value;
 	
 def getColIndex(argument):
 	global commandIndex
@@ -45,6 +57,7 @@ def getColIndex(argument):
 	global resultIndex
 	global folderIndex
 	global reportIndex
+	global criticalIndex
 
 	for i in range(len(argument)):
 		if(argument[i]=='command'):
@@ -59,6 +72,8 @@ def getColIndex(argument):
 			envSetupIndex = i
 		elif(argument[i]=='reportFolder'):
 			reportIndex = i
+		elif(argument[i]=='critical'):
+			criticalIndex = i
 	resultIndex = len(argument)
 
 def readCsv(filename):
@@ -76,8 +91,16 @@ def execute(row):
 	global result
 	global noRun
 	global success
+	global commandIndex
+	global runIndex
+	global nameIndex
+	global resultIndex
+	global folderIndex
+	global reportIndex
+	global criticalIndex
 	x = ''
-	if(row[runIndex]=='y'):
+	testScriptCritical = getCriticalValue(row[criticalIndex])
+	if(row[runIndex]=='y' and testScriptCritical >= criticalTag):
 		print("Setting up environment for "+ row[nameIndex])
 		os.system(row[envSetupIndex])		
 		print ("runnng test: " + row[nameIndex])
@@ -120,6 +143,14 @@ def main():
 	global rowsCopy;
 	global headers
 	global f
+	global criticalTag
+	
+	if (len(sys.argv) < 2):
+		print ("no args")
+		criticalTag =0
+	else:
+		criticalTag = getCriticalValue(sys.argv[1])
+	
 	# csv file name 
 	filename = "list.csv"
 	os.system('mkdir "'+reportFolder +'"')

@@ -1,0 +1,62 @@
+newman
+
+Sample Postman Collection
+
+→ A simple GET request
+  GET https://postman-echo.com/get?source=newman-sample-github-collection [errored]
+     unable to get local issuer certificate
+  2. expect response be 200
+  3. expect response json contain args
+
+→ A simple POST request
+  POST https://postman-echo.com/post [errored]
+     unable to get local issuer certificate
+
+→ A simple POST request with JSON body
+  POST https://postman-echo.com/post [errored]
+     unable to get local issuer certificate
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        3 │        3 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        2 │        2 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 3.5s                      │
+├───────────────────────────────────────────────┤
+│ total data received: 0B (approx)              │
+└───────────────────────────────────────────────┘
+
+  #  failure         detail                                                           
+                                                                                      
+ 1.  Error                                                                            
+                     unable to get local issuer certificate                           
+                     at request                                                       
+                     inside "A simple GET request"                                    
+                                                                                      
+ 2.  AssertionError  expect response be 200                                           
+                     expected response to have status reason 'OK' but got 'UNDEFINED' 
+                     at assertion:0 in test-script                                    
+                     inside "A simple GET request"                                    
+                                                                                      
+ 3.  JSONError       expect response json contain args                                
+                     Unexpected token u in JSON at position 0                         
+                     at assertion:1 in test-script                                    
+                     inside "A simple GET request"                                    
+                                                                                      
+ 4.  Error                                                                            
+                     unable to get local issuer certificate                           
+                     at request                                                       
+                     inside "A simple POST request"                                   
+                                                                                      
+ 5.  Error                                                                            
+                     unable to get local issuer certificate                           
+                     at request                                                       
+                     inside "A simple POST request with JSON body"                    
