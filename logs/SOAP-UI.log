@@ -34,33 +34,33 @@
 [INFO] 
 [INFO] --- soapui-maven-plugin:5.3.0:test (default) @ soapui-maven-example ---
 SoapUI 5.3.0 Maven2 TestCase Runner
-18:06:28,274 WARN  [SoapUI] Missing folder [C:\tools\Jenkins\workspace\Automation\TestRunner\ext] for external libraries
-18:06:32,140 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\soapui-settings.xml]
-18:06:36,789 INFO  [PluginManager] 0 plugins loaded in 8 ms
-18:06:36,795 INFO  [DefaultSoapUICore] All plugins loaded
-18:06:41,947 INFO  [WsdlProject] Loaded project from [file:/C:/tools/Jenkins/workspace/Automation/TestRunner/SoapUI/soapui-maven-example.xml]
-18:06:41,985 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
-18:06:42,012 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
-18:06:42,031 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
-18:06:42,322 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
-18:06:42,357 INFO  [SoapUITestCaseRunner] running step [start mockservice]
-18:06:45,545 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
-18:06:45,554 INFO  [SoapUITestCaseRunner] running step [hello-request]
-18:06:46,398 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-18:06:46,398 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /hello HTTP/1.1
-18:06:46,587 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-18:06:46,614 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-18:06:47,364 INFO  [log] {
+18:12:39,740 WARN  [SoapUI] Missing folder [C:\tools\Jenkins\workspace\Automation\TestRunner\ext] for external libraries
+18:12:40,174 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\soapui-settings.xml]
+18:12:41,526 INFO  [PluginManager] 0 plugins loaded in 2 ms
+18:12:41,526 INFO  [DefaultSoapUICore] All plugins loaded
+18:12:43,032 INFO  [WsdlProject] Loaded project from [file:/C:/tools/Jenkins/workspace/Automation/TestRunner/SoapUI/soapui-maven-example.xml]
+18:12:43,041 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+18:12:43,045 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+18:12:43,046 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
+18:12:43,062 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
+18:12:43,070 INFO  [SoapUITestCaseRunner] running step [start mockservice]
+18:12:43,600 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
+18:12:43,602 INFO  [SoapUITestCaseRunner] running step [hello-request]
+18:12:43,746 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+18:12:43,746 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /hello HTTP/1.1
+18:12:43,795 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+18:12:43,799 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+18:12:43,956 INFO  [log] {
 	"hello": "world"
 }
-18:06:47,406 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-18:06:47,406 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
-18:06:47,526 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
-18:06:47,534 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 3980ms, status: FINISHED
-18:06:47,542 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 5465ms
+18:12:43,965 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+18:12:43,965 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
+18:12:43,981 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
+18:12:43,982 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 666ms, status: FINISHED
+18:12:43,992 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 941ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  34.109 s
-[INFO] Finished at: 2019-10-17T18:06:47+05:30
+[INFO] Total time:  7.207 s
+[INFO] Finished at: 2019-10-17T18:12:43+05:30
 [INFO] ------------------------------------------------------------------------
