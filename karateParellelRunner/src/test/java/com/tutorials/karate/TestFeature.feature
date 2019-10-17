@@ -4,4 +4,4 @@ Feature: Test User API
     When method GET
     Then status 200
 	And match $ contains {page:2,per_page:6,total_pages:2}
-	And match $.data[0] contains {id:7,email:"michael.lawson@reqres.in"}
+	And match $.data[0] contains {id:7,email:"michael.lawson@reqres.in"} 
