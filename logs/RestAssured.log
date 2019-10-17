@@ -206,9 +206,9 @@ response: {
 
 1 Scenarios (1 passed)
 5 Steps (5 passed)
-0m21.680s
+0m20.116s
 
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.35 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.652 sec
 
 Results :
 
@@ -217,6 +217,6 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  51.359 s
-[INFO] Finished at: 2019-10-17T16:27:23+05:30
+[INFO] Total time:  54.069 s
+[INFO] Finished at: 2019-10-17T16:42:49+05:30
 [INFO] ------------------------------------------------------------------------

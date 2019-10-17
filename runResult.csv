@@ -6,4 +6,4 @@ Karate, karatetest, mvn -f karatetest test , y, karatetest/target/surefire-repor
 JXLPOI-SoapUI-Test, SoapUI-Groovy, mvn -f SoapUI-Groovy test -DresultFile=./SoapUI-Groovy/result/result.xls -DinputWorkBook=./SoapUI-Groovy/book.xls, n, SoapUI-Groovy/result, , NOT_RUN
 RestAssured, restassured, mvn test -Dtest=CucumberTests -f restassured, y, restassured/target/cucumber-report, , PASSED
 SOAP-UI, SoapUI, mvn -f SoapUI clean test, y, , , PASSED
-postman-newman, Postman, newman run postman/sample-collection.json -r html,cli --reporter-html-export postman/result/html.html, y, postman/result, npm install -g newman, FAILED
+postman-newman, Postman, newman run postman/sample-collection.json -r html,cli --reporter-html-export postman/result/html.html, y, postman/result, npm install -g newman, PASSED
