@@ -1,23 +1,23 @@
-2019-10-17 22:41:26,184 WARN  [SoapUI] Missing folder [E:\demo\jenkins-test-runner-POC\ext] for external libraries
-2019-10-17 22:41:29,740 INFO  [DefaultSoapUICore] initialized soapui-settings from [E:\demo\jenkins-test-runner-POC\SoapUI\soapui-settings.xml]
-2019-10-17 22:41:43,373 INFO  [PluginManager] 0 plugins loaded in 28 ms
-2019-10-17 22:41:43,373 INFO  [DefaultSoapUICore] All plugins loaded
-2019-10-17 22:41:59,882 INFO  [WsdlProject] Loaded project from [file:/E:/demo/jenkins-test-runner-POC/SoapUI/soapui-maven-example.xml]
-2019-10-17 22:42:00,102 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
-2019-10-17 22:42:00,186 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
-2019-10-17 22:42:00,206 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
-2019-10-17 22:42:00,454 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
-2019-10-17 22:42:00,530 INFO  [SoapUITestCaseRunner] running step [start mockservice]
-2019-10-17 22:42:06,328 INFO  [jetty] Logging to com.eviware.soapui.support.log.JettyLogger@dc58399 via com.eviware.soapui.support.log.JettyLogger
-2019-10-17 22:42:06,832 INFO  [jetty] jetty-6.1.26
-2019-10-17 22:42:08,580 INFO  [jetty] Started JettyMockEngine$SoapUIConnector@0.0.0.0:8088
-2019-10-17 22:42:08,580 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
-2019-10-17 22:42:08,608 INFO  [SoapUITestCaseRunner] running step [hello-request]
-2019-10-17 22:42:14,808 INFO  [log] {
+2019-10-17 22:54:47,770 WARN  [SoapUI] Missing folder [C:\tools\Jenkins\workspace\Automation\TestRunner\ext] for external libraries
+2019-10-17 22:54:50,886 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\soapui-settings.xml]
+2019-10-17 22:54:55,546 INFO  [PluginManager] 0 plugins loaded in 35 ms
+2019-10-17 22:54:55,546 INFO  [DefaultSoapUICore] All plugins loaded
+2019-10-17 22:55:01,250 INFO  [WsdlProject] Loaded project from [file:/C:/tools/Jenkins/workspace/Automation/TestRunner/SoapUI/soapui-maven-example.xml]
+2019-10-17 22:55:01,400 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+2019-10-17 22:55:01,435 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+2019-10-17 22:55:01,453 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
+2019-10-17 22:55:01,614 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
+2019-10-17 22:55:01,659 INFO  [SoapUITestCaseRunner] running step [start mockservice]
+2019-10-17 22:55:03,891 INFO  [jetty] Logging to com.eviware.soapui.support.log.JettyLogger@7f279ead via com.eviware.soapui.support.log.JettyLogger
+2019-10-17 22:55:04,198 INFO  [jetty] jetty-6.1.26
+2019-10-17 22:55:04,332 INFO  [jetty] Started JettyMockEngine$SoapUIConnector@0.0.0.0:8088
+2019-10-17 22:55:04,332 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
+2019-10-17 22:55:04,341 INFO  [SoapUITestCaseRunner] running step [hello-request]
+2019-10-17 22:55:06,574 INFO  [log] {
 	"hello": "world"
 }
-2019-10-17 22:42:15,028 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-2019-10-17 22:42:15,028 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
-2019-10-17 22:42:15,111 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
-2019-10-17 22:42:15,115 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 10558ms, status: FINISHED
-2019-10-17 22:42:15,115 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 14745ms
+2019-10-17 22:55:06,618 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2019-10-17 22:55:06,618 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
+2019-10-17 22:55:06,691 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
+2019-10-17 22:55:06,699 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 3434ms, status: FINISHED
+2019-10-17 22:55:06,716 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 5236ms
