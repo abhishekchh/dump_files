@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cybercom.edu:soapui-maven-example:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-clean-plugin is missing. @ line 38, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------------< com.cybercom.edu:soapui-maven-example >----------------
+[INFO] Building SoapUI Maven example 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ soapui-maven-example ---
+[INFO] Deleting E:\demo\jenkins-test-runner-POC\SoapUI (includes = [*.log], excludes = [])
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ soapui-maven-example ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory E:\demo\jenkins-test-runner-POC\SoapUI\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ soapui-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ soapui-maven-example ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory E:\demo\jenkins-test-runner-POC\SoapUI\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ soapui-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ soapui-maven-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- soapui-maven-plugin:5.3.0:test (default) @ soapui-maven-example ---
+SoapUI 5.3.0 Maven2 TestCase Runner
+23:55:23,874 WARN  [SoapUI] Missing folder [E:\demo\jenkins-test-runner-POC\ext] for external libraries
+23:55:27,626 INFO  [DefaultSoapUICore] initialized soapui-settings from [E:\demo\jenkins-test-runner-POC\SoapUI\soapui-settings.xml]
+23:55:38,590 INFO  [PluginManager] 0 plugins loaded in 54 ms
+23:55:38,591 INFO  [DefaultSoapUICore] All plugins loaded
+23:55:46,845 INFO  [WsdlProject] Loaded project from [file:/E:/demo/jenkins-test-runner-POC/SoapUI/soapui-maven-example.xml]
+23:55:46,856 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+23:55:46,919 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+23:55:46,925 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
+23:55:47,046 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
+23:55:47,089 INFO  [SoapUITestCaseRunner] running step [start mockservice]
+23:55:50,396 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
+23:55:50,459 INFO  [SoapUITestCaseRunner] running step [hello-request]
+23:55:51,246 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+23:55:51,246 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /hello HTTP/1.1
+23:55:51,484 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+23:55:51,495 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+23:55:52,121 INFO  [log] {
+	"hello": "world"
+}
+23:55:52,150 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+23:55:52,151 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
+23:55:52,193 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
+23:55:52,196 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 3842ms, status: FINISHED
+23:55:52,196 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 5235ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:22 min
+[INFO] Finished at: 2019-10-16T23:55:52+05:30
+[INFO] ------------------------------------------------------------------------
