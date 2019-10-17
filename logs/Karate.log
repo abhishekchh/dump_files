@@ -6,7 +6,7 @@
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Karate ---
 [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory E:\demo\jenkins-test-runner-POC\karatetest\src\main\resources
+[INFO] skip non existing resourceDirectory C:\tools\Jenkins\workspace\Automation\TestRunner\karatetest\src\main\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Karate ---
 [INFO] No sources to compile
@@ -18,256 +18,172 @@
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Karate ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to E:\demo\jenkins-test-runner-POC\karatetest\target\test-classes
+[INFO] Compiling 1 source file to C:\tools\Jenkins\workspace\Automation\TestRunner\karatetest\target\test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Karate ---
-[INFO] Surefire report directory: E:\demo\jenkins-test-runner-POC\karatetest\target\surefire-reports
+[INFO] Surefire report directory: C:\tools\Jenkins\workspace\Automation\TestRunner\karatetest\target\surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.tutorials.karate.TestRunner
-23:55:20.410 [main] WARN com.intuit.karate - karate-config.js not found on the classpath, skipping bootstrap configuration
-23:55:31.266 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
-23:55:31.292 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-23:55:31.294 [main] DEBUG com.intuit.karate - 
+15:46:45.185 [main] WARN com.intuit.karate - karate-config.js not found on the classpath, skipping bootstrap configuration
+15:46:53.930 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+15:46:54.078 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+15:46:54.078 [main] DEBUG com.intuit.karate - 
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_212)
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
 
-23:55:31.297 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-23:55:31.549 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
-23:55:31.552 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
-23:55:31.669 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/104.27.135.11:443
-23:55:31.669 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/104.27.135.11:443 with timeout 30000
-23:55:32.675 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
-23:55:32.676 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
-23:55:32.677 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
-23:55:33.246 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
-23:55:33.247 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
-23:55:33.248 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
-23:55:33.249 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 12466 milliseconds for URL: https://reqres.in/api/users?page=2
+15:46:54.086 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+15:46:54.221 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+15:46:54.229 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://reqres.in:443
+15:46:54.529 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to reqres.in/104.27.135.11:443
+15:46:54.529 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to reqres.in/104.27.135.11:443 with timeout 30000
+15:46:55.166 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+15:46:55.166 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256]
+15:46:55.166 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+15:46:55.927 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+15:46:55.927 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+15:46:55.928 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+15:46:55.928 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=sni96286.cloudflaressl.com, OU=PositiveSSL Multi-Domain, OU=Domain Control Validated
+15:46:55.928 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [sni96286.cloudflaressl.com, *.alypa.cl, *.arredamentobar.altervista.org, *.dhcmx.com, *.hurtworld-servers.ru, *.murdochfamily.id.au, *.precisioncleaninghawaii.com, *.reqres.in, *.rescatevalencia.org, *.rorimaq.com.br, *.siemon.id.au, *.thrivenowseminars.com, *.tonysnails.com, *.visiondefender.co.uk, alypa.cl, arredamentobar.altervista.org, dhcmx.com, hurtworld-servers.ru, murdochfamily.id.au, precisioncleaninghawaii.com, reqres.in, rescatevalencia.org, rorimaq.com.br, siemon.id.au, thrivenowseminars.com, tonysnails.com, visiondefender.co.uk]
+15:46:55.928 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=COMODO ECC Domain Validation Secure Server CA 2, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB
+15:46:55.953 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 10.1.6.4:52054<->104.27.135.11:443
+15:46:55.953 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+15:46:55.960 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/users?page=2 HTTP/1.1
+15:46:55.960 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+15:46:56.014 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+15:46:56.023 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/users?page=2 HTTP/1.1
+15:46:56.023 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: reqres.in
+15:46:56.023 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+15:46:56.023 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+15:46:56.023 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+15:46:56.023 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/users?page=2 HTTP/1.1[\r][\n]"
+15:46:56.024 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: reqres.in[\r][\n]"
+15:46:56.072 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+15:46:56.072 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+15:46:56.081 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+15:46:56.081 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 17 Oct 2019 10:16:56 GMT[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: __cfduid=df782f3d3a53fc0697f00373eae9ab73f1571307416; expires=Fri, 16-Oct-20 10:16:56 GMT; path=/; domain=.reqres.in; HttpOnly; Secure[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"[\r][\n]"
+15:46:56.275 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Via: 1.1 vegur[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-Cache-Status: HIT[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Age: 2214[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: Thu, 17 Oct 2019 14:16:56 GMT[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: public, max-age=14400[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: cloudflare[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "CF-RAY: 527185168e98573f-IAD[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "15d[\r][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xa5][0xd3]=k[0xc3]0[0x10][0x6][0xe0][0xff]r[0xb3][0x91][0xeb][0x84][0xb6][0xa9][0xa6]R[0xe8][0xc7][0x90].[0xa5][)[0xe1]b[0x9f]m5[0x92][0xe5][0x9e]d[0x9b]4[0xe4][0xbf][0x97][0xc8]-[0x6][0x9b]d[0xf1]"[0xa4][0xd3][0xfb][0xc2]3H[0x7][0xa8][0xb1] [0x90][0x8b][0x8]j[0xe2]M[0xb8][0x89][0xc0][[0x8f][0x1a]d[0xb2][0xf8][0xdb][0x86][0x1b][0x17]r[0x19]z[0x4][0xf9]q[0x0][0x95][0x81][0xbc][0x8d][0x80][0xc]*[\r][0x12][0x8c]JK$-4v[0xce]V[0xf7]L[0xdf]LN[0xa8][\n]"
+15:46:56.282 [main] DEBUG org.apache.http.wire - http-outgoing-0 << ""[0xc8][0x15];[0xbf][0xa9][0xd0][0x10]Hx[0xed]s[0x10][0x81][0xc6]a[0xba][0xe]-[0x88][0x0][[0xf4][0xc8] [0xa1][0xf4][0xbe]v2[0x8e][0xdd]R[0xa0][0xc1][0x1f][a[0xe7]DjM[0xdc][0xa8][0x1c]Srq[0xbf][0xfa]NyO[0x1c][0xe7]Vk[0xf2]~[0xb7][0xd7][0x14]'[0x8b][0x95][0xf8][0xaa][0xb]8F[0xbd]r5([0xb5][0xaa]2[0x87]{[0x91][0x13][0x17][0xcd]E[0xe7][0xba]O[0x8e][0x9c]O[0xbd][0x19]Rd[0xc4]e[0xb2][0xba][0x9e]0[0xef][0x6][0xa6][0xb7][[0x85]N[0xe4]M[0xb5][0xa3][0xf3][0xc4][0xf7][0x90][0x1a][0xb]O[0x9d][0x19][0xbc]V[0xb5][0xb4][0xab][0xb9][0xe5][0x89]/[0xb9][0x1a][0x80][0xdb]=[0xdb]J[0xe4][0x8a]t[0xe6][0xce][0x3][0x1f]N[0xa9][0xb1]/tf[0x0][0xb9]q[0xce]R[0xd6]L}[0xc9][0xe0]+[0xc8]rA[0x82][0xb2][0xe][0xf9][0x92][0xf0]9[0xe4]F[0xc4][0xc7][0xbe]5[0xc3]h[0xd8]X[0xc5]4}[0x8a][0xa7][0x1f][0xf5]odLK[0xd2][0xa2][0xb4][0x1d]i}[0x9e][0xf8][0x16]b#[0xe2]K([0xcd][0x10][0x96][0xb4]%[0xf6][\n]"
+15:46:56.486 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xb5]![0x95][0xe1][0xe0][0xfc]<[0xfe][0x2]8[0xaa][0xee]b[0x14][0x4][0x0][0x0][\r][\n]"
+15:46:56.494 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 17 Oct 2019 10:16:56 GMT
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: __cfduid=df782f3d3a53fc0697f00373eae9ab73f1571307416; expires=Fri, 16-Oct-20 10:16:56 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: Express
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Via: 1.1 vegur
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << CF-Cache-Status: HIT
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Age: 2214
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: Thu, 17 Oct 2019 14:16:56 GMT
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: public, max-age=14400
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: cloudflare
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << CF-RAY: 527185168e98573f-IAD
+15:46:56.501 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+15:46:56.532 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+15:46:56.603 [main] DEBUG org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [__cfduid="df782f3d3a53fc0697f00373eae9ab73f1571307416", version:0, domain:reqres.in, path:/, expiry:Fri Oct 16 15:46:56 IST 2020]
+15:46:56.636 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+15:46:56.636 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+15:46:56.636 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://reqres.in:443] can be kept alive indefinitely
+15:46:56.636 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://reqres.in:443][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+15:46:56.636 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2214
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 527185168e98573f-IAD
+1 < Cache-Control: public, max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 17 Oct 2019 10:16:56 GMT
+1 < Etag: W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: Thu, 17 Oct 2019 14:16:56 GMT
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df782f3d3a53fc0697f00373eae9ab73f1571307416; expires=Fri, 16-Oct-20 10:16:56 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}]}
+
+15:46:56.644 [main] DEBUG com.intuit.karate - response time in milliseconds: 11171
+15:46:57.990 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+15:46:57.990 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+15:46:58.008 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+15:46:58.164 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+15:46:58.179 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+15:46:58.179 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+15:46:58.179 [main] ERROR com.intuit.karate - assertion failed: path: $.per_page, actual: 6, expected: 3, reason: not equal
 Failed scenarios:
 com/tutorials/karate/TestFeature.feature:2 # Scenario: Fetch all users
 
 1 Scenarios (1 failed)
-5 Steps (1 failed, 3 skipped, 1 passed)
-0m17.562s
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 20.251 sec <<< FAILURE!
-When method GET(Scenario: Fetch all users)  Time elapsed: 0.042 sec  <<< ERROR!
-com.intuit.karate.exception.KarateException: http call failed after 12466 milliseconds for URL: https://reqres.in/api/users?page=2
-	at com.intuit.karate.http.HttpClient.invoke(HttpClient.java:215)
-	at com.intuit.karate.StepDefs.method(StepDefs.java:336)
-	at ?.When method GET(com/tutorials/karate/TestFeature.feature:4)
-Caused by: java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:245)
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:76)
-	at com.intuit.karate.http.HttpClient.invoke(HttpClient.java:207)
-	at com.intuit.karate.StepDefs.method(StepDefs.java:336)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at com.intuit.karate.cucumber.CucumberUtils.runStep(CucumberUtils.java:138)
-	at com.intuit.karate.cucumber.KarateRuntime.runStep(KarateRuntime.java:78)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at com.intuit.karate.junit4.Karate.runChild(Karate.java:60)
-	at com.intuit.karate.junit4.Karate.runChild(Karate.java:25)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at com.intuit.karate.junit4.Karate.run(Karate.java:66)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:236)
-	... 48 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 67 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 73 more
+5 Steps (1 failed, 1 skipped, 3 passed)
+0m18.298s
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 21.31 sec <<< FAILURE!
+And match $ contains {page:2,per_page:3,total_pages:4}(Scenario: Fetch all users)  Time elapsed: 0.038 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: path: $.per_page, actual: 6, expected: 3, reason: not equal
+	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:574)
+	at com.intuit.karate.StepDefs.matchNamed(StepDefs.java:533)
+	at com.intuit.karate.StepDefs.matchContains(StepDefs.java:528)
+	at ?.And match $ contains {page:2,per_page:3,total_pages:4}(com/tutorials/karate/TestFeature.feature:8)
 
-Scenario: Fetch all users  Time elapsed: 0.06 sec  <<< ERROR!
-com.intuit.karate.exception.KarateException: http call failed after 12466 milliseconds for URL: https://reqres.in/api/users?page=2
-	at com.intuit.karate.http.HttpClient.invoke(HttpClient.java:215)
-	at com.intuit.karate.StepDefs.method(StepDefs.java:336)
-	at ?.When method GET(com/tutorials/karate/TestFeature.feature:4)
-Caused by: java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:245)
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:76)
-	at com.intuit.karate.http.HttpClient.invoke(HttpClient.java:207)
-	at com.intuit.karate.StepDefs.method(StepDefs.java:336)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at com.intuit.karate.cucumber.CucumberUtils.runStep(CucumberUtils.java:138)
-	at com.intuit.karate.cucumber.KarateRuntime.runStep(KarateRuntime.java:78)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at com.intuit.karate.junit4.Karate.runChild(Karate.java:60)
-	at com.intuit.karate.junit4.Karate.runChild(Karate.java:25)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at com.intuit.karate.junit4.Karate.run(Karate.java:66)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:396)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:355)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at com.intuit.karate.http.apache.ApacheHttpClient.makeHttpRequest(ApacheHttpClient.java:236)
-	... 48 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 67 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 73 more
+Scenario: Fetch all users  Time elapsed: 0.039 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: path: $.per_page, actual: 6, expected: 3, reason: not equal
+	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:574)
+	at com.intuit.karate.StepDefs.matchNamed(StepDefs.java:533)
+	at com.intuit.karate.StepDefs.matchContains(StepDefs.java:528)
+	at ?.And match $ contains {page:2,per_page:3,total_pages:4}(com/tutorials/karate/TestFeature.feature:8)
 
 
 Results :
 
 Tests in error: 
-  When method GET(Scenario: Fetch all users): http call failed after 12466 milliseconds for URL: https://reqres.in/api/users?page=2
-  Scenario: Fetch all users: http call failed after 12466 milliseconds for URL: https://reqres.in/api/users?page=2
+  And match $ contains {page:2,per_page:3,total_pages:4}(Scenario: Fetch all users): path: $.per_page, actual: 6, expected: 3, reason: not equal
+  Scenario: Fetch all users: path: $.per_page, actual: 6, expected: 3, reason: not equal
 
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 3
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:05 min
-[INFO] Finished at: 2019-10-16T23:55:34+05:30
+[INFO] Total time:  02:03 min
+[INFO] Finished at: 2019-10-17T15:47:02+05:30
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project Karate: There are test failures.
 [ERROR] 
-[ERROR] Please refer to E:\demo\jenkins-test-runner-POC\karatetest\target\surefire-reports for the individual test results.
+[ERROR] Please refer to C:\tools\Jenkins\workspace\Automation\TestRunner\karatetest\target\surefire-reports for the individual test results.
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.

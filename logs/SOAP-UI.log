@@ -13,18 +13,18 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ soapui-maven-example ---
-[INFO] Deleting E:\demo\jenkins-test-runner-POC\SoapUI (includes = [*.log], excludes = [])
+[INFO] Deleting C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI (includes = [*.log], excludes = [])
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ soapui-maven-example ---
 [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory E:\demo\jenkins-test-runner-POC\SoapUI\src\main\resources
+[INFO] skip non existing resourceDirectory C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\src\main\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ soapui-maven-example ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ soapui-maven-example ---
 [WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory E:\demo\jenkins-test-runner-POC\SoapUI\src\test\resources
+[INFO] skip non existing resourceDirectory C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\src\test\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ soapui-maven-example ---
 [INFO] No sources to compile
@@ -34,33 +34,33 @@
 [INFO] 
 [INFO] --- soapui-maven-plugin:5.3.0:test (default) @ soapui-maven-example ---
 SoapUI 5.3.0 Maven2 TestCase Runner
-23:55:23,874 WARN  [SoapUI] Missing folder [E:\demo\jenkins-test-runner-POC\ext] for external libraries
-23:55:27,626 INFO  [DefaultSoapUICore] initialized soapui-settings from [E:\demo\jenkins-test-runner-POC\SoapUI\soapui-settings.xml]
-23:55:38,590 INFO  [PluginManager] 0 plugins loaded in 54 ms
-23:55:38,591 INFO  [DefaultSoapUICore] All plugins loaded
-23:55:46,845 INFO  [WsdlProject] Loaded project from [file:/E:/demo/jenkins-test-runner-POC/SoapUI/soapui-maven-example.xml]
-23:55:46,856 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
-23:55:46,919 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
-23:55:46,925 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
-23:55:47,046 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
-23:55:47,089 INFO  [SoapUITestCaseRunner] running step [start mockservice]
-23:55:50,396 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
-23:55:50,459 INFO  [SoapUITestCaseRunner] running step [hello-request]
-23:55:51,246 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-23:55:51,246 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /hello HTTP/1.1
-23:55:51,484 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-23:55:51,495 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-23:55:52,121 INFO  [log] {
+15:47:17,035 WARN  [SoapUI] Missing folder [C:\tools\Jenkins\workspace\Automation\TestRunner\ext] for external libraries
+15:47:18,438 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\tools\Jenkins\workspace\Automation\TestRunner\SoapUI\soapui-settings.xml]
+15:47:21,500 INFO  [PluginManager] 0 plugins loaded in 2 ms
+15:47:21,500 INFO  [DefaultSoapUICore] All plugins loaded
+15:47:25,701 INFO  [WsdlProject] Loaded project from [file:/C:/tools/Jenkins/workspace/Automation/TestRunner/SoapUI/soapui-maven-example.xml]
+15:47:25,715 INFO  [SoapUITestCaseRunner] Setting project property [example] to [Hello World!]
+15:47:25,730 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [REST Project 1]
+15:47:25,731 INFO  [SoapUITestCaseRunner] Running Project [REST Project 1], runType = SEQUENTIAL
+15:47:25,789 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [hellocase]
+15:47:25,825 INFO  [SoapUITestCaseRunner] running step [start mockservice]
+15:47:28,777 INFO  [JettyMockEngine] Started mockService [restmock] on port [8088] at path [/]
+15:47:28,910 INFO  [SoapUITestCaseRunner] running step [hello-request]
+15:47:29,560 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+15:47:29,560 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /hello HTTP/1.1
+15:47:29,753 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+15:47:29,771 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+15:47:30,462 INFO  [log] {
 	"hello": "world"
 }
-23:55:52,150 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
-23:55:52,151 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
-23:55:52,193 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
-23:55:52,196 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 3842ms, status: FINISHED
-23:55:52,196 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 5235ms
+15:47:30,529 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+15:47:30,529 INFO  [SoapUITestCaseRunner] running step [stop mockservice]
+15:47:30,602 INFO  [JettyMockEngine] Stopped MockService [restmock] on port [8088]
+15:47:30,610 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [hellocase], time taken: 3465ms, status: FINISHED
+15:47:30,611 INFO  [SoapUITestCaseRunner] Project [REST Project 1] finished with status [FINISHED] in 4858ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:22 min
-[INFO] Finished at: 2019-10-16T23:55:52+05:30
+[INFO] Total time:  02:31 min
+[INFO] Finished at: 2019-10-17T15:47:30+05:30
 [INFO] ------------------------------------------------------------------------
