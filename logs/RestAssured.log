@@ -49,7 +49,7 @@ Feature: Get book by ISBN
         {
             "kind": "books#volume",
             "id": "8U2oAAAAQBAJ",
-            "etag": "bcY92LOaxyQ",
+            "etag": "RkVFCe1Z9hQ",
             "selfLink": "https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ",
             "volumeInfo": {
                 "title": "Steve Jobs",
@@ -79,7 +79,7 @@ Feature: Get book by ISBN
                     "Biography & Autobiography"
                 ],
                 "averageRating": 4.0,
-                "ratingsCount": 3895,
+                "ratingsCount": 3843,
                 "maturityRating": "NOT_MATURE",
                 "allowAnonLogging": false,
                 "contentVersion": "0.3.0.0.preview.0",
@@ -126,7 +126,7 @@ response: {
         {
             "kind": "books#volume",
             "id": "8U2oAAAAQBAJ",
-            "etag": "bcY92LOaxyQ",
+            "etag": "RkVFCe1Z9hQ",
             "selfLink": "https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ",
             "volumeInfo": {
                 "title": "Steve Jobs",
@@ -156,7 +156,7 @@ response: {
                     "Biography & Autobiography"
                 ],
                 "averageRating": 4.0,
-                "ratingsCount": 3895,
+                "ratingsCount": 3843,
                 "maturityRating": "NOT_MATURE",
                 "allowAnonLogging": false,
                 "contentVersion": "0.3.0.0.preview.0",
@@ -206,9 +206,9 @@ response: {
 
 1 Scenarios (1 passed)
 5 Steps (5 passed)
-0m20.116s
+0m18.616s
 
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.652 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.573 sec
 
 Results :
 
@@ -217,6 +217,6 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  54.069 s
-[INFO] Finished at: 2019-10-17T16:42:49+05:30
+[INFO] Total time:  54.607 s
+[INFO] Finished at: 2019-10-17T18:00:02+05:30
 [INFO] ------------------------------------------------------------------------
