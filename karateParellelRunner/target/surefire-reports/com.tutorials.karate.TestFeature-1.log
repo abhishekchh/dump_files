@@ -1,31 +1,28 @@
-23:22:49.856 request:
+23:29:25.585 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-23:22:57.732 response time in milliseconds: 7808.23
+23:29:28.444 response time in milliseconds: 2832.05
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 755
+1 < Age: 1145
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 52742116baa3576f-IAD
+1 < CF-RAY: 52742a9cee362400-IAD
 1 < Cache-Control: public, max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 17 Oct 2019 17:52:57 GMT
+1 < Date: Thu, 17 Oct 2019 17:59:27 GMT
 1 < Etag: W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: Thu, 17 Oct 2019 21:52:57 GMT
+1 < Expires: Thu, 17 Oct 2019 21:59:27 GMT
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=da35377ed9ef65980b0ba3d02597d94881571334777; expires=Fri, 16-Oct-20 17:52:57 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+1 < Set-Cookie: __cfduid=dd68a03583ab06c65cff54372b525dbc91571335167; expires=Fri, 16-Oct-20 17:59:27 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}]}
 
-23:22:57.741 assertion failed: path: $.per_page, actual: 6, expected: 3, reason: not equal (Integer)
-reason: not equal (Integer)
-reason: not equal (Integer)

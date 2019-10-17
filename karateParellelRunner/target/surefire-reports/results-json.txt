@@ -1,1 +1,1 @@
-{"features":2,"ignored":0,"efficiency":0.38647386688975643,"failures":{"com.tutorials.karate.TestFeature":"TestFeature.feature:8 - path: $.per_page, actual: 6, expected: 3, reason: not equal (Integer)"},"totalTime":41576.8586,"threads":5,"scenarios":3,"failed":1,"passed":2,"version":"0.9.4","elapsedTime":21516.0}
+{"features":2,"ignored":0,"efficiency":0.29919507274490786,"failures":null,"totalTime":21592.9084,"threads":5,"scenarios":3,"failed":0,"passed":3,"version":"0.9.4","elapsedTime":14434.0}

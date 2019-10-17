@@ -1,14 +1,9 @@
-<testsuite failures="1" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="13.737208">
-  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="13.737208">
-    <failure message="TestFeature.feature:8 - path: $.per_page, actual: 6, expected: 3, reason: not equal (Integer)">Given url 'https://reqres.in/api/users?page=2' ............................ passed
+<testsuite failures="0" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="7.231649">
+  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="7.231649">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
 When method GET ........................................................... passed
 Then status 200 ........................................................... passed
-And match $ contains {page:2,per_page:3,total_pages:4} .................... failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: TestFeature.feature:8 - path: $.per_page, actual: 6, expected: 3, reason: not equal (Integer)&#13;
-	at ✽.And match $ contains {page:2,per_page:3,total_pages:4} (TestFeature.feature:8)&#13;
-
-And match $.data[0] contains {id:4,email:"eve.holt@reqres.in"} ............ skipped</failure>
+And match $ contains {page:2,per_page:6,total_pages:2} .................... passed
+And match $.data[0] contains {id:7,email:"michael.lawson@reqres.in"} ...... passed</system-out>
   </testcase>
 </testsuite>
