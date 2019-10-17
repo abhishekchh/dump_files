@@ -1,5 +1,5 @@
-<testsuite failures="0" name="com/tutorials/karate/User.feature" skipped="0" tests="2" time="14.36126">
-  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="7.459821">
+<testsuite failures="0" name="com/tutorials/karate/User.feature" skipped="0" tests="2" time="25.501049">
+  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="12.236468">
     <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
 When method GET ........................................................... passed
 Then status 200 ........................................................... passed
@@ -7,7 +7,7 @@ And match $.data contains {id:2} .......................................... pass
 And match $.data contains {email:"janet.weaver@reqres.in"} ................ passed
 And match $.data contains {first_name:"Janet"} ............................ passed</system-out>
   </testcase>
-  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="6.901439">
+  <testcase classname="com.tutorials.karate.User" name="Fetch single users" time="13.264581">
     <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
 When method GET ........................................................... passed
 Then status 200 ........................................................... passed
