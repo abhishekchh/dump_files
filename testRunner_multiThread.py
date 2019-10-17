@@ -25,16 +25,18 @@ envSetupIndex = -1;
 now = datetime.now()
 current_time = now.strftime("%Y%m%d-%H%M%S")
 reportFolder = 'Reports/' + current_time
-result =''
-csvLines = ''
+result =[]
+csvLines = []
 rowsCopy = []
 threadCount = 3
 headers=''
+f=''
 
-def saveResult(filecontent):
-	f = open('runResult.csv', 'w+')
-	f.write(filecontent)
-	f.close()
+def saveResult(line):
+	global f
+	csvWriter = csv.writer(f,delimiter=',',quotechar='"')
+	csvWriter.writerow(line)
+	
 	
 def getColIndex(argument):
 	global commandIndex
@@ -95,9 +97,10 @@ def execute(row):
 	elif(x==''):
 		noRun = noRun + 1
 		testResult = 'NOT_RUN'
-	csvLines = csvLines + ', '.join(row) + ', ' + testResult + '\n'
+	row.append(testResult)
+	csvLines.append(row)
 	print("\nTest Run status of %s is %s" %(row[nameIndex] , testResult))
-	result = headers +csvLines
+	
 
 
 	
@@ -116,6 +119,7 @@ def worker():
 def main():
 	global rowsCopy;
 	global headers
+	global f
 	# csv file name 
 	filename = "list.csv"
 	os.system('mkdir "'+reportFolder +'"')
@@ -124,8 +128,8 @@ def main():
 	# reading csv file 
 	readCsv(filename)
 
-	headers = ', '.join(field for field in fields)
-	headers= headers + ', result\n'
+	headers = fields
+	headers.append('result')
 
 	getColIndex(fields)
 
@@ -153,7 +157,14 @@ def main():
 	print('Total success runs\t =%3d \nTotal failed runs\t =%3d \nTests marked as no run\t =%3d' %(success,failed,noRun)) 
 	print('============================================')
 
-	saveResult(result)
+	f = open('runResult.csv', 'wb+')
+
+	#result = headers +csvLines
+	saveResult(headers)
+	csvLines.reverse()
+	for line in csvLines:
+		saveResult(line)
+	f.close()
 
 	print("Script execution time is ")
 	print(datetime.now().replace(microsecond=0) - startTime)

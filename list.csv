@@ -4,6 +4,6 @@ JXLPOI-SoapUI-Test,SoapUI-Groovy,mvn -f SoapUI-Groovy test -DresultFile=./SoapUI
 Karate,karatetest,mvn -f karatetest test ,y,karatetest/target/surefire-reports,
 Karate-WithReporting,karateParellelRunner,mvn -f karateParellelRunner test,n,karateParellelRunner/target/cucumber-html-reports,
 RestAssured,restassured,mvn test -Dtest=CucumberTests -f restassured,y,restassured/target/cucumber-report,
-postman-newman,Postman,"newman run postman/sample-collection.json -r html,cli --reporter-html-export postman/result/html.html",y,postman/result,npm install -g newman
+postman-newman,Postman,"newman run postman/sample-collection.json -r html,cli --reporter-html-export postman/result/html.html",y,postman/result,
 Parasoft,parasoft_demo,"soatestcli -data parasoft_demo -config ""user://Example"" -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html -fail -localsettings parasoft_demo\local.ls",n,parasoft_demo/Report,soatestcli -import parasoft_demo -data parasoft_demo
 Parasoft_2,parasoft_demo,"soatestcli -data parasoft_demo -config ""user://Example"" -resource Demo/Fail.tst -report parasoft_demo\Report\Demo2.html -fail -localsettings parasoft_demo\local.ls",n,parasoft_demo/Report,soatestcli -import parasoft_demo -data parasoft_demo
