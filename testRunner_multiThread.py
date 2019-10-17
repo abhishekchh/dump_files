@@ -58,6 +58,7 @@ def getColIndex(argument):
 	global folderIndex
 	global reportIndex
 	global criticalIndex
+	global envSetupIndex
 
 	for i in range(len(argument)):
 		if(argument[i]=='command'):
@@ -98,6 +99,7 @@ def execute(row):
 	global folderIndex
 	global reportIndex
 	global criticalIndex
+	global envSetupIndex
 	x = ''
 	testScriptCritical = getCriticalValue(row[criticalIndex])
 	if(row[runIndex]=='y' and testScriptCritical >= criticalTag):
