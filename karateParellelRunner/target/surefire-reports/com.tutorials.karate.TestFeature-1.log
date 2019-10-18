@@ -1,25 +1,25 @@
-23:41:23.691 request:
+11:41:38.914 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-23:41:30.234 response time in milliseconds: 6372.68
+11:41:39.697 response time in milliseconds: 781.61
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 1864
+1 < Age: 1771
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 52743c2abcd356e5-IAD
+1 < CF-RAY: 52785b2a8f48e10e-IAD
 1 < Cache-Control: public, max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 17 Oct 2019 18:11:26 GMT
+1 < Date: Fri, 18 Oct 2019 06:11:39 GMT
 1 < Etag: W/"414-k36Lu9tCb0XMJeh2/UG19C4xbw4"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: Thu, 17 Oct 2019 22:11:26 GMT
+1 < Expires: Fri, 18 Oct 2019 10:11:39 GMT
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d0b858598c6b95d430ec99faa1d0bb67a1571335886; expires=Fri, 16-Oct-20 18:11:26 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
+1 < Set-Cookie: __cfduid=d411866c9b6391b77334ca22c7f1956441571379099; expires=Sat, 17-Oct-20 06:11:39 GMT; path=/; domain=.reqres.in; HttpOnly; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
