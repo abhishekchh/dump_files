@@ -1,0 +1,9 @@
+<testsuite failures="0" name="com/tutorials/karate/TestFeature.feature" skipped="0" tests="1" time="1.967071">
+  <testcase classname="com.tutorials.karate.TestFeature" name="Fetch all users" time="1.967071">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $ contains {page:2,per_page:6,total_pages:2} .................... passed
+And match $.data[0] contains {id:7,email:"michael.lawson@reqres.in"} ...... passed</system-out>
+  </testcase>
+</testsuite>
