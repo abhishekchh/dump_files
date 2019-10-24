@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-2"},{"id":2,"content":"ForkJoinPool-1-worker-1"},{"id":3,"content":"ForkJoinPool-1-worker-4"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"TestFeature[1:2]","start":3726,"end":10576,"title":"TestFeature[1:2] 3726-10576"},{"id":2,"group":2,"content":"User[1:3]","start":3674,"end":10557,"title":"User[1:3] 3674-10557"},{"id":3,"group":3,"content":"User[2:11]","start":3727,"end":10541,"title":"User[2:11] 3727-10541"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-4"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"TestFeature[1:2]","start":5406,"end":13465,"title":"TestFeature[1:2] 5406-13465"},{"id":2,"group":2,"content":"User[1:3]","start":5406,"end":13499,"title":"User[1:3] 5406-13499"},{"id":3,"group":3,"content":"User[2:11]","start":5424,"end":13455,"title":"User[2:11] 5424-13455"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
