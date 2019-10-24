@@ -1,8 +1,9 @@
 testName,folderName,command,run,reportFolder,envSetup,critical,result
-JXLPOI-SoapUI-Test,SoapUI-Groovy,mvn -f SoapUI-Groovy test -DresultFile=./SoapUI-Groovy/result/result.xls -DinputWorkBook=./SoapUI-Groovy/book.xls,y,SoapUI-Groovy/result,,low,PASSED
-SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,,,high,PASSED
-Karate-WithReporting,karateParellelRunner,mvn -f karateParellelRunner clean test,y,karateParellelRunner/target/cucumber-html-reports,,medium,PASSED
-Karate,karatetest,mvn -f karatetest clean test ,y,karatetest/target/surefire-reports,,low,PASSED
+RestAssured,restassured,mvn test -Dtest=CucumberTests -f restassured,y,restassured/target/cucumber-report,,high,PASSED
 postman-newman,Postman,"newman run postman/sample-collection.json -r html,cli --reporter-html-export postman/result/html.html",y,postman/result,,high,PASSED
+SOAP-UI,SoapUI,mvn -f SoapUI clean test,y,,,high,PASSED
+JXLPOI-SoapUI-Test,SoapUI-Groovy,mvn -f SoapUI-Groovy test -DresultFile=./SoapUI-Groovy/result/result.xls -DinputWorkBook=./SoapUI-Groovy/book.xls,y,SoapUI-Groovy/result,,low,NOT_RUN
+Karate,karatetest,mvn -f karatetest clean test ,y,karatetest/target/surefire-reports,,low,NOT_RUN
+Karate-WithReporting,karateParellelRunner,mvn -f karateParellelRunner clean test,y,karateParellelRunner/target/cucumber-html-reports,,medium,NOT_RUN
 Parasoft,parasoft_demo,"soatestcli -data parasoft_demo -config ""user://Example"" -resource Demo/Success.tst -report parasoft_demo\Report\Demo1.html -fail -localsettings parasoft_demo\local.ls",n,parasoft_demo/Report,soatestcli -import parasoft_demo -data parasoft_demo,low,NOT_RUN
 Parasoft_2,parasoft_demo,"soatestcli -data parasoft_demo -config ""user://Example"" -resource Demo/Fail.tst -report parasoft_demo\Report\Demo2.html -fail -localsettings parasoft_demo\local.ls",n,parasoft_demo/Report,soatestcli -import parasoft_demo -data parasoft_demo,low,NOT_RUN
